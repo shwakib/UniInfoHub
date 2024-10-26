@@ -1,0 +1,49 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-uni {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700; /* Gold color for "Uni" */
+    padding-right: 5px;
+  }
+  
+  .navbar-infohub {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0047ba; /* Dark blue color for "InfoHUB" */
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin-left: 20px;
+  }
+  
+  .navbar-links a {
+    color: #0047ba;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .navbar-links a:hover {
+    color: #002f6c; /* Darker blue on hover */
+  }
+  
