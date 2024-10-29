@@ -1,49 +1,83 @@
-/* Navbar.css */
+/* Navbar container */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.navbar-logo {
+  margin-left: 60px; /* Adjust this value as needed */
+}
+
+.navbar-logo img {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  height: 40px; /* Adjust as needed */
+}
+
+/* Navbar links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  margin-right: 40px;
+}
+
+.navbar-links li {
+  position: relative;
+}
+
+.navbar-links a {
+  font-family: 'Arial', sans-serif;
+  color: #003366;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px;
+  position: relative;
+}
+
+/* Add arrow beside each link */
+.navbar-links li:not(:last-child) a::after {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-bottom: 3px solid #003366;
+  border-right: 3px solid #003366;
+  transform: rotate(45deg);
+  margin-left: 8px;
+  vertical-align: middle;
+  position: relative;
+  top: -3px;
+  transition: transform 0.3s ease; /* Smooth transition for the arrow */
+}
+
+/* Change link color on hover */
+.navbar-links a:hover {
+  color: #0055a5; /* Adjust hover color */
+}
+
+/* Rotate the arrow upwards on hover */
+.navbar-links li:not(:last-child) a:hover::after {
+  transform: rotate(-135deg); /* Rotate the arrow to face upwards */
+  top: 2.5px;
+}
+
+/* Optional media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  .navbar-logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-uni {
-    font-size: 24px;
-    font-weight: bold;
-    color: #FFD700; /* Gold color for "Uni" */
-    padding-right: 5px;
-  }
-  
-  .navbar-infohub {
-    font-size: 24px;
-    font-weight: bold;
-    color: #0047ba; /* Dark blue color for "InfoHUB" */
-  }
-  
+
   .navbar-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+    flex-direction: column;
+    gap: 10px;
   }
-  
-  .navbar-links li {
-    margin-left: 20px;
-  }
-  
-  .navbar-links a {
-    color: #0047ba;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  
-  .navbar-links a:hover {
-    color: #002f6c; /* Darker blue on hover */
-  }
-  
+}

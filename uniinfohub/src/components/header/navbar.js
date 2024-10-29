@@ -1,32 +1,44 @@
-import React from "react";
-import "../../css/navbar.css"; // Make sure to create this file for styling
+import React from 'react';
+import logo from '../../assets/image/Uniinfohub_logo.png'; // Replace with the actual path to your logo image
+import '../../css/navbar.css';
 
-const Navbar = () => {
+function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <span className="navbar-uni">Uni</span>
-        <span className="navbar-infohub">InfoHUB</span>
+        <img src={logo} alt="Uni Info Hub Logo" />
       </div>
       <ul className="navbar-links">
         <li>
-          <a href="#health">Health &#9662;</a>
+          <a href="#health">HEALTH</a>
+          <ul className="dropdown">
+            {/* Add dropdown items here */}
+          </ul>
         </li>
         <li>
-          <a href="#transportation">Transportation</a>
+          <a href="#transportation">TRANSPORTATION</a>
+          <ul className="dropdown">
+            {/* Add dropdown items here */}
+          </ul>
         </li>
         <li>
-          <a href="#library">Library & Research &#9662;</a>
+          <a href="#library">LIBRARY & RESEARCH</a>
+          <ul className="dropdown">
+            {/* Add dropdown items here */}
+          </ul>
         </li>
         <li>
-          <a href="#student-services">Student Services &#9662;</a>
+          <a href="#student-services">STUDENT SERVICES</a>
+          <ul className="dropdown">
+            {/* Add dropdown items here */}
+          </ul>
         </li>
         <li>
-          <a href="#about">About &#9662;</a>
+          <a href="#about">ABOUT</a>
         </li>
       </ul>
     </nav>
   );
-};
+}
 
 export default Navbar;
