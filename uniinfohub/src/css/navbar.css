@@ -1,4 +1,3 @@
-/* Navbar container */
 .navbar {
   display: flex;
   align-items: center;
@@ -8,18 +7,16 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo styling */
 .navbar-logo {
-  margin-left: 60px; /* Adjust this value as needed */
+  margin-left: 60px;
 }
 
 .navbar-logo img {
   padding-top: 20px;
   padding-bottom: 10px;
-  height: 40px; /* Adjust as needed */
+  height: 40px;
 }
 
-/* Navbar links */
 .navbar-links {
   list-style: none;
   display: flex;
@@ -42,8 +39,7 @@
   position: relative;
 }
 
-/* Add arrow beside each link */
-.navbar-links li:not(:last-child) a::after {
+.navbar-links > li:not(:last-child) > a::after {
   content: '';
   display: inline-block;
   width: 8px;
@@ -54,22 +50,65 @@
   margin-left: 8px;
   vertical-align: middle;
   position: relative;
-  top: -3px;
-  transition: transform 0.3s ease; /* Smooth transition for the arrow */
+  top: -4px;
+  transition: transform 0.3s ease;
 }
 
-/* Change link color on hover */
+.navbar-links > li:not(:last-child):hover > a::after {
+  transform: rotate(-135deg);
+  top: 2px;
+}
+
 .navbar-links a:hover {
-  color: #0055a5; /* Adjust hover color */
+  color: #0055a5;
 }
 
-/* Rotate the arrow upwards on hover */
-.navbar-links li:not(:last-child) a:hover::after {
-  transform: rotate(-135deg); /* Rotate the arrow to face upwards */
-  top: 2.5px;
+.dropdown {
+  display: none; 
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  border-radius: 5px;
+  z-index: 100;
 }
 
-/* Optional media query for mobile responsiveness */
+.navbar-links li:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown li:last-child {
+  border-bottom: none;
+}
+
+.dropdown a {
+  font-family: 'Arial', sans-serif;
+  color: #333333;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  font-weight: normal;
+}
+
+.dropdown a:hover {
+  color: #0055a5;
+  background-color: #f0f0f0; 
+}
+
+.dropdown a::after {
+  content: none; 
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
