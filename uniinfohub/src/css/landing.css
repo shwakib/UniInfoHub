@@ -7,21 +7,21 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-  }
-  
-  .hero-image-container {
+}
+
+.hero-image-container {
     position: relative;
     width: 100%;
     height: 100%;
-  }
-  
-  .hero-image {
+}
+
+.hero-image {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ensures the image covers the entire container */
-  }
-  
-  .hero-text {
+}
+
+.hero-text {
     position: absolute;
     top: 30%;
     left: 20%;
@@ -33,5 +33,153 @@
     background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
     padding: 20px;
     border-radius: 8px; /* Optional: adds rounded corners */
-  }
-  
+}
+
+/* Calendar and Virtual Tour Section */
+.calendar-tour-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    padding-bottom: 0; /* Remove bottom padding */
+    gap: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.calendar, .virtual-tour {
+    width: 45%; /* Set width for both sections to share space */
+}
+
+/* Calendar Styling */
+.calendar h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0; /* Remove bottom margin on heading */
+    font-weight: normal;
+}
+
+.full-view-link {
+    font-size: 1rem;
+    color: #0055a5;
+    text-decoration: none;
+}
+
+.full-view-link:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #fef8f6; /* Soft background color for the table */
+}
+
+table th, table td {
+    padding: 15px; /* Increased padding for better spacing */
+    text-align: left;
+    border: 1px solid #e0e0e0; /* Solid borders to separate cells */
+    font-weight: normal; /* Remove bold font from table content */
+    color: #333; /* Consistent text color */
+}
+
+table th {
+    background-color: #f3ece9; /* Distinct background for header */
+    font-weight: bold;
+    font-size: 1rem; /* Slightly larger font size for header */
+}
+
+table td {
+    font-size: 0.95rem; /* Adjust font size for better readability */
+}
+
+/* "More" link below the table */
+.calendar-more-link {
+    text-align: right;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.calendar-more-link a {
+    font-size: 0.9rem;
+    color: #0055a5;
+    text-decoration: none;
+}
+
+.calendar-more-link a:hover {
+    text-decoration: underline;
+}
+
+/* Virtual Tour Styling */
+.virtual-tour {
+    position: relative; /* Ensure the positioning for absolute elements */
+}
+
+.virtual-tour h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0; /* Remove bottom margin on heading */
+    font-weight: normal;
+}
+
+.tour-video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+    border-radius: 8px;
+    top: 10px;
+}
+
+.tour-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Proper alignment for "More details" link below the video */
+.video-more-link {
+    text-align: right;
+    margin-top: 5px;
+    position: absolute;
+    bottom: 15px; /* Aligns it with the bottom of the virtual tour section */
+    right: 0;
+    font-weight: bold;
+}
+
+.video-more-link a {
+    font-size: 0.9rem;
+    color: #0055a5;
+    text-decoration: none;
+}
+
+.video-more-link a:hover {
+    text-decoration: underline;
+}
+
+/* Map Section */
+.map-section {
+    padding: 20px 40px; /* Reduced top padding */
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: -20px; /* Pull up the map section slightly */
+    padding-bottom: 30px;
+}
+
+.map-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow around map */
+}
