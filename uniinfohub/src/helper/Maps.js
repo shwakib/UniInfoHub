@@ -14,7 +14,7 @@ const uofWindsorCoordinates = {
 
 const Maps = () => {
   return (
-    <LoadScript googleMapsApiKey="AIzaSyCuoYkOyDGgZJvPja5TbAOXtfgn8xW0r70">
+    <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API}>
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={uofWindsorCoordinates}
