@@ -55,6 +55,7 @@
     font-size: 1.8rem;
     margin-bottom: 0; /* Remove bottom margin on heading */
     font-weight: normal;
+    text-align: left;
 }
 
 .full-view-link {
@@ -118,6 +119,7 @@ table td {
     font-size: 1.8rem;
     margin-bottom: 0; /* Remove bottom margin on heading */
     font-weight: normal;
+    text-align: left;
 }
 
 .tour-video-container {
@@ -173,6 +175,8 @@ table td {
     margin-bottom: 20px;
     font-weight: bold;
     color: #333;
+    text-align: left;
+    margin-left: 27px;
 }
 
 .map-container {
@@ -257,5 +261,236 @@ table td {
 .news-card-date {
     font-size: 0.9rem;
     color: #777;
+    margin-top: 5px;
+}
+
+/* Health & Wellness Section */
+.health-section {
+    padding: 40px;
+    background-color: #003366;
+    color: #fff;
+}
+
+.health-section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    margin-top: -10px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.health-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensures 3 cards per row */
+    gap: 20px;
+    margin-left: 21px;
+    margin-right: 20px;
+}
+
+.health-card {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.health-card-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.health-card-content {
+    padding: 10px;
+}
+
+.health-card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #003366;
+    margin: 0;
+}
+
+.health-card-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Transit & Transportation Section */
+.transit-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.transit-section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: -15px;
+}
+
+.transit-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.transit-card {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.transit-card-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.transit-card-content {
+    padding: 10px;
+}
+
+.transit-card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #003366;
+    margin: 0;
+}
+
+.transit-card-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Printing, Library & Research Section */
+.library-section {
+    padding: 40px;
+    background-color: #FFC107; /* Yellow background color */
+    color: #333;
+}
+
+.library-section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: -15px;
+}
+
+.library-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.library-card {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.library-card-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.library-card-content {
+    padding: 10px;
+}
+
+.library-card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.library-card-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Student Hub Services Section */
+.student-hub-section {
+    padding: 40px;
+    background-color: #f9f9f9; /* Light pink background color */
+    color: #333;
+}
+
+.student-hub-section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: -15px;
+}
+
+.student-hub-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.student-hub-card {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.student-hub-card-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.student-hub-card-content {
+    padding: 10px;
+}
+
+.student-hub-card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.student-hub-card-description {
+    font-size: 0.9rem;
+    color: #555;
     margin-top: 5px;
 }
