@@ -3,6 +3,7 @@ import Navbar from '../../header/navbar';
 import Banner from '../../../assets/image/Banner.png';
 import '../../../css/landing.css';
 import Maps from '../../../helper/Maps';
+import Footer from '../../footer/footer';
 import Hackathon from '../../../assets/image/Hackathon.png';
 import Studentlife from '../../../assets/image/Student Life.png';
 import Codingwk from '../../../assets/image/CodingWorkshop.png';
@@ -102,7 +103,7 @@ const libraryData = [
         description: 'Access to printing services on campus, including guidelines for use.'
     },
     {
-        image: Library,
+        image: LibraryAmenities,
         title: 'Leddy Library & Amenities',
         description: 'Information on library amenities and resources available to students.'
     },
@@ -318,6 +319,10 @@ function Landing() {
                         </div>
                     ))}
                 </div>
+            </section>
+
+            <section>
+                <Footer/>
             </section>
         </div>
     );
