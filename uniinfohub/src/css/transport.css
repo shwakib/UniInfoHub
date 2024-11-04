@@ -8,24 +8,27 @@
     height: auto;
 }
 
-.banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
-}
-
 .bus-info-section {
     padding: 20px;
     max-width: 900px;
     margin: 0 auto;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-.pickup-info, .faq-section, .opt-out-info, .contact-info {
+.pickup-info{
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.faq-section, .opt-out-info, .contact-info {
     margin-top: 20px;
 }
 
