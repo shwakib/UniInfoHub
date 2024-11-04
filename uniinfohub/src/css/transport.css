@@ -1,0 +1,45 @@
+.transport-banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bus-info-section {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pickup-info, .faq-section, .opt-out-info, .contact-info {
+    margin-top: 20px;
+}
+
+.faq-section h4 {
+    margin-bottom: 5px;
+}
+
+.contact-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.contact-info th, .contact-info td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
