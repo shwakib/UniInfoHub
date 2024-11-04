@@ -20,7 +20,7 @@ function Footer() {
                     </ul>
                 </div>
                 <div className="footer-links">
-                    <h3>Quick Link</h3>
+                    <h3>Quick Links</h3>
                     <ul>
                         <li><a href="https://www.uwindsor.ca/foodservices/">Food Services</a></li>
                         <li><a href="https://www.uwindsor.ca/residence/">Residence</a></li>
@@ -30,7 +30,7 @@ function Footer() {
                     </ul>
                 </div>
                 <div className="footer-links">
-                    <h3>Quick Link</h3>
+                    <h3>Quick Links</h3>
                     <ul>
                         <li><a href="https://www.uwindsor.ca/science/computerscience/">School Of Computer Science</a></li>
                         <li><a href="https://www.uwindsor.ca/science/computerscience/event-calendar/month">CS Events</a></li>

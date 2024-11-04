@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../../header/navbar';
 import Banner from '../../../assets/image/Banner.png';
 import '../../../css/landing.css';
@@ -153,6 +153,16 @@ const studentHubData = [
 ];
 
 function Landing() {
+    const [importantDates, setImportantDates] = useState([]);
+
+    // Fetch the data from your backend when the component mounts
+    useEffect(() => {
+        fetch('http://127.0.0.1:5000/api/important-dates') // Replace with your actual backend URL
+            .then(response => response.json())
+            .then(data => setImportantDates(data))
+            .catch(error => console.error('Error fetching important dates:', error));
+    }, []);
+
     return (
         <div>
             <Navbar />
@@ -173,36 +183,26 @@ function Landing() {
             <section className="calendar-tour-section">
                 <div className="calendar">
                     <h2>Important Dates</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Event / Deadline</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Monday, September 30</td>
-                                <td>Autumn Quarter begins</td>
-                            </tr>
-                            <tr>
-                                <td>Monday, September 30</td>
-                                <td>Autumn Quarter begins</td>
-                            </tr>
-                            <tr>
-                                <td>Monday, September 30</td>
-                                <td>Autumn Quarter begins</td>
-                            </tr>
-                            <tr>
-                                <td>Monday, September 30</td>
-                                <td>Autumn Quarter begins</td>
-                            </tr>
-                            <tr>
-                                <td>Monday, September 30</td>
-                                <td>Autumn Quarter begins</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    {importantDates.length > 0 ? (
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Event / Deadline</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {importantDates.slice(0, 5).map((event, index) => ( // Display only the first 5 entries
+                                    <tr key={index}>
+                                        <td>{event.date}</td>
+                                        <td><a href={event.link} target="_blank" rel="noopener noreferrer">{event.title}</a></td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    ) : (
+                        <p>Loading important dates...</p>
+                    )}
                     {/* "More" link below the table */}
                     <div className="calendar-more-link">
                         <a href="https://www.uwindsor.ca/registrar/events-listing">...More</a>
@@ -322,7 +322,7 @@ function Landing() {
             </section>
 
             <section>
-                <Footer/>
+                <Footer />
             </section>
         </div>
     );
