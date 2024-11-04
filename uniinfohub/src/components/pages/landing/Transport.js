@@ -14,27 +14,31 @@ function Transport() {
             {/* Banner Section */}
             <section className="transport-banner">
                 <img src={Bustransport} alt="Bus at Windsor" className="banner-image" />
-                <div className="banner-text">
-                    <h1>Bus Pass Update</h1>
-                    <p>All information regarding bus passes at Windsor</p>
-                </div>
+                
             </section>
 
             {/* Information Section */}
             <section className="bus-info-section">
+           
                 <div className="bus-info-content">
+                    <div className="banner-text">
+                    <h1>Bus Pass Update</h1>
+                    <p>All information regarding bus passes at Windsor</p> 
+                    </div>
+                    {/* <h1>Bus Pass Update</h1>
+                    <p>All information regarding bus passes at Windsor</p>  */}
                     <h3>Driving Today for a Better Tomorrow</h3>
                     <p>Students who are registered as a full-time student can pick up a bus pass at the UWindsor office...</p>
 
                     <div className="pickup-info">
-                        <h4>Bus Pass Pick-up - Hours of Operation</h4>
-                        <p><b>Location:</b> Outside UWindsor Office</p>
-                        <p><b>Monday to Thursday:</b> 9:30am to 4:00pm</p>
-                        <p><b>Friday:</b> 9:30am to 3:30pm</p>
+                        <h4>Bus Pass Pick-Up Hours of Operation</h4>
+                        <p><b>Outside UWSA Office</b></p>
+                        <p>Monday to Thursday - 9:30am to 4:00pm</p>
+                        <p>Friday - 9:30am to 3:30pm</p>
+                    
                     </div>
-
                     <img src={Bustransport2} alt="Another bus image" className="bus-image" />
-
+                    
                     {/* FAQs Section */}
                     <div className="faq-section">
                         <h3>Pick Up Your Pass!</h3>
