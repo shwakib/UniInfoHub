@@ -8,17 +8,6 @@
     height: auto;
 }
 
-<<<<<<< HEAD
-.banner-text {
-    
-    top: 50%;
-    left: 50%;
-    color:black;
-    border-radius: 5px;
-}
-
-=======
->>>>>>> main
 .bus-info-section {
     padding: 20px;
     max-width: 900px;
@@ -30,7 +19,6 @@
     align-items: stretch;
   }
 
-<<<<<<< HEAD
 .pickup-info{
     background-color: #f4f4f4;
     padding: 20px;
@@ -41,42 +29,6 @@
 }
 
 .faq-section, .opt-out-info, .contact-info {
-=======
-  .pickup-info-box, .bus-image {
-    width: 100%;
-    box-sizing: border-box; 
-  }
-.pickup-info-box {
-  background-color: #f8f8f8; 
-  border-radius: 12px;      
-  padding: 5px 30px;                  
-  margin: 20px auto;           
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-  text-align: center;          
-  color: #4a4a4a;             
-  font-style: italic;
-}
-
-.pickup-info-box h4 {
-    font-size: 1.4em;          
-    color: #333;                
-    margin-bottom: 10px; 
-}
-.pickup-info-box h3 {
-    font-size: 1.4em;          
-    color: #333;                
-    margin-bottom: 10px;        
-  }
-  
-  .pickup-info-box p {                           
-    font-size: 1.2em;          
-    color: #555555;             
-    line-height: 1.6;          
-    font-weight: 400;    
-  }
-
-.pickup-info-box, .faq-section, .opt-out-info, .contact-info {
->>>>>>> main
     margin-top: 20px;
 }
 
