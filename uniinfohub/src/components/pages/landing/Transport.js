@@ -14,26 +14,41 @@ function Transport() {
             {/* Banner Section */}
             <section className="transport-banner">
                 <img src={Bustransport} alt="Bus at Windsor" className="banner-image" />
-                <div className="banner-text">
-                    <h1>Bus Pass Update</h1>
-                    <p>All information regarding bus passes at Windsor</p>
-                </div>
+                
             </section>
 
             {/* Information Section */}
             <section className="bus-info-section">
                 <div className="bus-info-content">
-                    <h3>Driving Today for a Better Tomorrow</h3>
-                    <p>Students who are registered as a full-time student can pick up a bus pass at the UWindsor office...</p>
-
-                    <div className="pickup-info">
-                        <h4>Bus Pass Pick-up - Hours of Operation</h4>
-                        <p><b>Location:</b> Outside UWindsor Office</p>
-                        <p><b>Monday to Thursday:</b> 9:30am to 4:00pm</p>
-                        <p><b>Friday:</b> 9:30am to 3:30pm</p>
+                    <div className ="bus-pass-hearder">
+                        <h1>Bus Pass Update</h1>
+                        <p>All information regarding bus passes at Windsor</p>
+                    </div>
+                    <div className= " bus-pas-info">
+                        <h3>Info</h3>
+                        <p> The UWSA, OPUS, and GSS negotiated a universal student bus pass (U-Pass) for UWSA, OPUS, and GSS students. To use U-Pass, students will need to tap their U-Pass cards on the readers upon boarding the bus. </p>
+                        <p> The U-Pass allows members to have unlimited rides on the regular Transit Windsor City service during the fall/winter 2024/2025 semesters.</p>
+                    </div>
+                    <div className="driving-today-section">
+                        <h3>Driving Today for a Better Tomorrow</h3>
+                        <p>Transit Windsor operates the public transit for the municipality of the City of Windsor. You can view the route maps and schedules for the service are map at the Transit Windsor website at www.citywindsor.ca/transitwindsor.
+                        You can also view the terms and conditions and other useful information on the site.
+                        </p>
                     </div>
 
-                    <img src={Bustransport2} alt="Another bus image" className="bus-image" />
+                     {/* Pickup Information Box */}
+                     <div class="container">
+                        <div className="pickup-info-box">
+                            <h4>Bus Pass Pick-Up Hours of Operation</h4>
+                            <p><b>Outside UWSA Office</b></p>
+                            <p>Monday to Thursday - 9:30am to 4:00pm</p><br></br>
+                            <p>Friday - 9:30am to 3:30pm</p>
+                        </div>
+
+                        <img src={Bustransport2} alt="Another bus image" className="bus-image" />
+                    </div>
+                  
+
 
                     {/* FAQs Section */}
                     <div className="faq-section">
