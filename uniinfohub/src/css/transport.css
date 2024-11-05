@@ -18,6 +18,50 @@
     flex-direction: column;
     align-items: stretch;
   }
+  .bus-info-section {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pickup-info-box, .bus-image {
+    width: 100%;
+    box-sizing: border-box; 
+  }
+.pickup-info-box {
+  background-color: #f8f8f8; 
+  border-radius: 12px;      
+  padding: 5px 30px;                  
+  margin: 20px auto;           
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: center;          
+  color: #4a4a4a;             
+  font-style: italic;
+}
+
+.pickup-info-box h4 {
+    font-size: 1.4em;          
+    color: #333;                
+    margin-bottom: 10px; 
+}
+.pickup-info-box h3 {
+    font-size: 1.4em;          
+    color: #333;                
+    margin-bottom: 10px;        
+  }
+  
+  .pickup-info-box p {                           
+    font-size: 1.2em;          
+    color: #555555;             
+    line-height: 1.6;          
+    font-weight: 400;    
+  }
+
 
 .pickup-info{
     background-color: #f4f4f4;
@@ -26,14 +70,6 @@
     text-align: center;
     margin-bottom: 20px;
 
-}
-
-.faq-section, .opt-out-info, .contact-info {
-    margin-top: 20px;
-}
-
-.faq-section h4 {
-    margin-bottom: 5px;
 }
 
 .contact-info table {
@@ -45,4 +81,101 @@
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
+}
+/* Styles for FAQ items with accordion functionality */
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.faq-item h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.arrow {
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.important-note {
+  background-color: #f9f9f9;
+  border-left: 4px solid #f44336; /* Red border to highlight the note */
+  padding: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* General Contact Information Section Styles */
+.contact-info-section {
+  margin-top: 20px;
+}
+
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.contact-table th,
+.contact-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.contact-table th {
+  background-color: #f4f4f4;
+}
+.contact-info-section {
+  margin-top: 30px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact-column {
+  flex: 1;
+}
+
+.contact-column h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-column p {
+  margin: 5px 0;
+}
+
+/* Accordion-style for FAQ and contact sections */
+.faq-item, .contact-info-section h3 {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.faq-item h4, .contact-info-section h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
