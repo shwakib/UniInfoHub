@@ -193,8 +193,8 @@ table td {
 }
 
 .map-container {
-    width: 100%;
-    max-width: 1380px;
+    width: 96%;
+    /* max-width: 1380px; */
     margin: 0 auto;
     border-radius: 8px;
     overflow: hidden;
@@ -321,6 +321,13 @@ table td {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.health-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deepens the shadow */
 }
 
 .health-card-image {
@@ -332,6 +339,16 @@ table td {
 
 .health-card-content {
     padding: 10px;
+}
+
+.health-card-content a {
+    text-decoration: none;
+}
+
+.health-card-content a:hover {
+    text-decoration: underline;
+    text-decoration-color: #003366;
+    text-underline-offset: 3px;
 }
 
 .health-card-title {
@@ -346,6 +363,7 @@ table td {
     color: #555;
     margin-top: 5px;
 }
+
 
 /* Transit & Transportation Section */
 .transit-section {
@@ -379,6 +397,12 @@ table td {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transit-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deepens the shadow */
 }
 
 .transit-card-image {
@@ -390,6 +414,16 @@ table td {
 
 .transit-card-content {
     padding: 10px;
+}
+
+.transit-card-content a {
+    text-decoration: none;
+}
+
+.transit-card-content a:hover {
+    text-decoration: underline;
+    text-decoration-color: #003366;
+    text-underline-offset: 3px;
 }
 
 .transit-card-title {
@@ -437,6 +471,12 @@ table td {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.library-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deepens the shadow */
 }
 
 .library-card-image {
@@ -448,6 +488,16 @@ table td {
 
 .library-card-content {
     padding: 10px;
+}
+
+.library-card-content a{
+    text-decoration: none;
+}
+
+.library-card-content a:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-underline-offset: 3px;
 }
 
 .library-card-title {
@@ -495,6 +545,12 @@ table td {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-hub-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deepens the shadow */
 }
 
 .student-hub-card-image {
@@ -506,6 +562,14 @@ table td {
 
 .student-hub-card-content {
     padding: 10px;
+}
+
+.student-hub-card-content a{
+    text-decoration: none;
+}
+
+.student-hub-card-content a:hover{
+    text-decoration: underline;
 }
 
 .student-hub-card-title {

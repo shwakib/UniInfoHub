@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <a href=''><img src={logo} alt="Uni Info Hub Logo" /></a>
+        <a href='/'><img src={logo} alt="Uni Info Hub Logo" /></a>
       </div>
       <ul className="navbar-links">
         <li>
@@ -42,7 +42,7 @@ function Navbar() {
             <li><a href="#sin-clinic">SIN Clinic & Service Canada</a></li>
             <li><a href="#driving-license-basic">Getting Driving License, Abstract & G1</a></li>
             <li><a href="#accomodation-dorm">Accommodation in University’s Dormitory</a></li>
-            <li><a href="#renting-home">Renting in Canada</a></li>
+            <li><a href="/rent">Renting in Canada</a></li>
           </ul>
         </li>
         <li>
