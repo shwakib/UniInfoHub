@@ -3,34 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Landing from '../src/components/pages/landing/Landing'
-import Transport from '../src/components/pages/landing/Transport'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/landing",
-    element: <Landing />,
-  },
-  {
-    path: "/transport",
-    element: <Transport />
-  },
-
-]);
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <RouterProvider router={router} />
+    <App />
   </React.StrictMode>
 );
 

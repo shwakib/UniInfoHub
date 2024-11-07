@@ -1,21 +1,22 @@
 import React from 'react';
 import logo from '../../assets/image/Uniinfohub_logo.png';
+import { Link } from 'react-router-dom';
 import '../../css/navbar.css';
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <a href=''><img src={logo} alt="Uni Info Hub Logo" /></a>
+        <a href='#health'><img src={logo} alt="Uni Info Hub Logo" /></a>
       </div>
       <ul className="navbar-links">
-        <li>
-          <a href="#health">HEALTH</a>
+      <li>
+          <Link to="#health">HEALTH</Link>
           <ul className="dropdown">
-            <li><a href="#gss-provider">GSS & Provider - Green Shield Canada</a></li>
-            <li><a href="#get-gsc-card">How to get GSC Card</a></li>
-            <li><a href="#before-getting-gsc">Before getting GSC Card</a></li>
-            <li><a href="#opt-out-health">Opt out from Health Insurance</a></li>
+            <li><Link to="/gss-provider">GSS & Provider - Green Shield Canada</Link></li>
+            <li><Link to="/get-gsc-card">How to get GSC Card</Link></li>
+            <li><Link to="/before-getting-gsc">Before getting GSC Card</Link></li>
+            <li><Link to="/opt-out-health">Opt out from Health Insurance</Link></li>
           </ul>
         </li>
         <li>

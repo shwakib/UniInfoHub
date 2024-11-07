@@ -93,19 +93,6 @@ table td {
     font-size: 0.95rem; /* Adjust font size for better readability */
 }
 
-/* Styling for event links */
-.calendar td a {
-    color: #003366; /* Solid color */
-    text-decoration: none; /* Remove underline by default */
-    font-weight: bold;
-}
-
-/* Styling for hover state */
-.calendar td a:hover {
-    text-decoration: underline; /* Add underline on hover */
-}
-
-
 /* "More" link below the table */
 .calendar-more-link {
     text-align: right;
@@ -265,23 +252,10 @@ table td {
 }
 
 .news-card-title {
-    text-decoration: none;
     font-size: 1.1rem;
     margin: 0;
-    color: #003366; 
     font-weight: bold;
-}
-
-.news-card-title a{
-    text-decoration: none;
-    font-size: 1.1rem;
-    margin: 0;
-    color: #003366; 
-    font-weight: bold;
-}
-
-.news-card-title a:hover{
-    text-decoration: underline;
+    color: #333;
 }
 
 .news-card-date {
