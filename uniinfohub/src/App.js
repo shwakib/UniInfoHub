@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Landing from './components/pages/landing/Landing';
+import Transport from './components/pages/landing/Transport';
 import GSSProvider from './components/pages/GSSProvider';
 import GetGSC from './components/pages/GetGSC';
 import BeforeGettingGSC from './components/pages/BeforeGettingGSC';
@@ -13,6 +14,7 @@ function App() {
     
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/transport" element={<Transport />} />
           <Route path="/gss-provider" element={<GSSProvider />} />
           <Route path="/get-gsc-card" element={<GetGSC />} />
           <Route path="/before-getting-gsc" element={<BeforeGettingGSC />} />
