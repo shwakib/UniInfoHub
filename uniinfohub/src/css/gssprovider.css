@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar, Banner, and Footer will remain outside the main content container */
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0px;
+    height: 400px;
+}
+
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Main Content Section */
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+/* Student Health Services Section */
+.health-services h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.health-services p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.health-info h3 {
+    font-size: 1.5em;
+    color: #444;
+    margin-top: 20px;
+}
+
+/* Full-width image within the main content container */
+.health-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.health-info p {
+    margin: 10px 0;
+}
+
+strong {
+    color: #333;
+}
+
+/* Footer Section */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+    color: #777;
+}
+
+/* Urgent Message Section */
+.urgent-message {
+    background-color: #f7f8fa;  /* Light background color */
+    color: #333;                /* Darker text color for contrast */
+    font-style: italic;         /* Italicized font */
+    padding: 15px 20px;         /* Padding inside the box */
+    border-radius: 10px;        /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for elevation */
+    margin: 20px 0;             /* Space around the message box */
+    text-align: center;         /* Center align text */
+}
+
+
+/* Our Clinic Section */
+.our-clinic {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.clinic-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.clinic-text {
+    flex: 1;
+}
+
+.clinic-text h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.clinic-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.clinic-text .appointment-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.clinic-text .appointment-link:hover {
+    text-decoration: underline;
+    color: #005bb5;
+}
+
+.clinic-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.clinic-image {
+    width: 100%;
+    height: auto;
+    max-width: none;
+    object-fit: cover;
+    border-radius: 8px;
+}

@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Navbar from '../../header/navbar';
 import Banner from '../../../assets/image/Banner.png';
 import '../../../css/landing.css';
 import Maps from '../../../helper/Maps';
 import Footer from '../../footer/footer';
+import Hackathon from '../../../assets/image/Hackathon.png';
+import Studentlife from '../../../assets/image/Student Life.png';
+import Codingwk from '../../../assets/image/CodingWorkshop.png';
 import HealthServices from '../../../assets/image/HealthServices.png';
 import CollegeDoctors from '../../../assets/image/CollegeDoctors.png';
 import SexualHealth from '../../../assets/image/SexualHealth.png';
@@ -23,6 +26,24 @@ import SINClinic from '../../../assets/image/SINClinic.png';
 import DrivingLicense from '../../../assets/image/DrivingLicense.png';
 import DormitoryAccommodation from '../../../assets/image/DormitoryAccommodation.png';
 import RentingCanada from '../../../assets/image/RentingCanada.png';
+
+const newsData = [
+    {
+        image: Hackathon,
+        title: 'Hackathon 3.0 Organized by Computer Club',
+        date: 'August 20, 2022'
+    },
+    {
+        image: Codingwk,
+        title: 'Coding workshop is conducted by Harvard Guest Professor',
+        date: 'August 20, 2022'
+    },
+    {
+        image: Studentlife,
+        title: 'Inclusive student life',
+        date: 'August 20, 2022'
+    }
+];
 
 const healthData = [
     {
@@ -133,25 +154,6 @@ const studentHubData = [
 ];
 
 function Landing() {
-    const [importantDates, setImportantDates] = useState([]);
-    const [latestNews, setLatestNews] = useState([]);
-
-    // Fetch the data from your backend when the component mounts
-    useEffect(() => {
-        fetch('http://127.0.0.1:5000/api/important-dates') // Replace with your actual backend URL
-            .then(response => response.json())
-            .then(data => setImportantDates(data))
-            .catch(error => console.error('Error fetching important dates:', error));
-    }, []);
-
-    // Fetch the latest news data
-    useEffect(() => {
-        fetch('http://127.0.0.1:5000/api/daily-news') // Replace with your actual backend URL for latest news
-            .then(response => response.json())
-            .then(data => setLatestNews(data))
-            .catch(error => console.error('Error fetching latest news:', error));
-    }, []);
-
     return (
         <div>
             <Navbar />
@@ -172,26 +174,36 @@ function Landing() {
             <section className="calendar-tour-section">
                 <div className="calendar">
                     <h2>Important Dates</h2>
-                    {importantDates.length > 0 ? (
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Date</th>
-                                    <th>Event / Deadline</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {importantDates.slice(0, 5).map((event, index) => ( // Display only the first 5 entries
-                                    <tr key={index}>
-                                        <td>{event.date}</td>
-                                        <td><a href={event.link} target="_blank" rel="noopener noreferrer">{event.title}</a></td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    ) : (
-                        <p>Loading important dates...</p>
-                    )}
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Event / Deadline</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday, September 30</td>
+                                <td>Autumn Quarter begins</td>
+                            </tr>
+                            <tr>
+                                <td>Monday, September 30</td>
+                                <td>Autumn Quarter begins</td>
+                            </tr>
+                            <tr>
+                                <td>Monday, September 30</td>
+                                <td>Autumn Quarter begins</td>
+                            </tr>
+                            <tr>
+                                <td>Monday, September 30</td>
+                                <td>Autumn Quarter begins</td>
+                            </tr>
+                            <tr>
+                                <td>Monday, September 30</td>
+                                <td>Autumn Quarter begins</td>
+                            </tr>
+                        </tbody>
+                    </table>
                     {/* "More" link below the table */}
                     <div className="calendar-more-link">
                         <a href="https://www.uwindsor.ca/registrar/events-listing">...More</a>
@@ -231,24 +243,18 @@ function Landing() {
                 <div className="news-section-header">
                     <h2>Latest News & Events</h2>
                     <span className="separator">|</span>
-                    <a href="https://www.uwindsor.ca/dailynews/" className="all-news-link">All News</a>
+                    <a href="#all-news" className="all-news-link">All News</a>
                 </div>
                 <div className="news-cards-container">
-                    {latestNews.length > 0 ? (
-                        latestNews.slice(0, 3).map((news, index) => (
-                            <div key={index} className="news-card">
-                                <img src={news.image} alt={news.title} className="news-card-image" />
-                                <div className="news-card-content">
-                                    <h3 className="news-card-title">
-                                        <a href={news.link} target="_blank" rel="noopener noreferrer">{news.title}</a>
-                                    </h3>
-                                    <p className="news-card-date">{news.date}</p>
-                                </div>
+                    {newsData.map((news, index) => (
+                        <div key={index} className="news-card">
+                            <img src={news.image} alt={news.title} className="news-card-image" />
+                            <div className="news-card-content">
+                                <h3 className="news-card-title">{news.title}</h3>
+                                <p className="news-card-date">{news.date}</p>
                             </div>
-                        ))
-                    ) : (
-                        <p>Loading latest news...</p>
-                    )}
+                        </div>
+                    ))}
                 </div>
             </section>
 
@@ -317,7 +323,7 @@ function Landing() {
             </section>
 
             <section>
-                <Footer />
+                <Footer/>
             </section>
         </div>
     );
