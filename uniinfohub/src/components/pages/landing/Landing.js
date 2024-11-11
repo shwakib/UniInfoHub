@@ -80,6 +80,7 @@ const healthData = [
 
 const transitData = [
     {
+        link:'/transport',
         image: BusPass,
         title: 'Getting a Bus Pass',
         description: 'Information on how to get access to transit passes and bus services.'
@@ -265,7 +266,7 @@ function Landing() {
                         <div key={index} className="health-card">
                             <img src={item.image} alt={item.title} className="health-card-image" />
                             <div className="health-card-content">
-                                <h3 className="health-card-title">{item.title}</h3>
+                                <a href='#'><h3 className="health-card-title">{item.title}</h3></a>
                                 <p className="health-card-description">{item.description}</p>
                             </div>
                         </div>
@@ -281,7 +282,7 @@ function Landing() {
                         <div key={index} className="transit-card">
                             <img src={item.image} alt={item.title} className="transit-card-image" />
                             <div className="transit-card-content">
-                                <h3 className="transit-card-title">{item.title}</h3>
+                                <a href={item.link}><h3 className="transit-card-title">{item.title}</h3></a>
                                 <p className="transit-card-description">{item.description}</p>
                             </div>
                         </div>
@@ -297,7 +298,7 @@ function Landing() {
                         <div key={index} className="library-card">
                             <img src={item.image} alt={item.title} className="library-card-image" />
                             <div className="library-card-content">
-                                <h3 className="library-card-title">{item.title}</h3>
+                                <a href='#'><h3 className="library-card-title">{item.title}</h3></a>
                                 <p className="library-card-description">{item.description}</p>
                             </div>
                         </div>
@@ -313,7 +314,7 @@ function Landing() {
                         <div key={index} className="student-hub-card">
                             <img src={item.image} alt={item.title} className="student-hub-card-image" />
                             <div className="student-hub-card-content">
-                                <h3 className="student-hub-card-title">{item.title}</h3>
+                                <a href='#'><h3 className="student-hub-card-title">{item.title}</h3></a>
                                 <p className="student-hub-card-description">{item.description}</p>
                             </div>
                         </div>

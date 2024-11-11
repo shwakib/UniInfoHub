@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../header/navbar';
 import Footer from '../footer/footer';
-import Banner from '../../assets/image/Banner.png';
+import GSSBanner from '../../assets/image/GSSBanner.png';
 import '../../css/gssprovider.css';
 import '../../css/landing.css';
 import HealthServices from '../../assets/image/HealthServices.png';
@@ -38,12 +38,8 @@ function GSSProvider() {
         {/* Banner Section */}
         <section className="hero-section">
             <div className="hero-image-container">
-                <img src={Banner} alt="Students working together in a library" className="hero-image" />
-                <div className="hero-text">
-                    <h1>All University info for <br />
-                        Students in Just <br />
-                        One Place!</h1>
-                </div>
+                <img src={GSSBanner} alt="Students working together in a library" className="hero-image" />
+                
             </div>
         </section>
 
@@ -52,26 +48,28 @@ function GSSProvider() {
 
             {/* Student Health Services Section */}
             <section className="health-services">
-                <h2>Student Health Services</h2>
+                <h2>The Graduate Student Society (GSS)</h2>
                 <p>To book an appointment, please call <strong>(519) 973-7002</strong></p>
 
                 <div className="health-info">
-                    <h3>Regular Hours</h3>
+                     <h3>Regular Hours</h3>
                     <p>Monday-Thursday, 8:30am-4:30pm. Nurses hours 9am-4pm. <br />
                     Fridays we close for lunch from 12:00pm-1:00 pm.</p>
                     <p>Located on the second floor of the CAW Student Centre room 242</p>
 
                     <img src={HealthServices} alt="Nurse taking a student's blood pressure" className="health-image" />
 
-                    <h3>Instruction</h3>
+                    <h3>The History</h3>
                     <p>
-                        Our medical team of doctors and nurses provide a range of health services to support your emotional, physical, and personal well-being while studying at the University of Windsor.
+                    The Graduate Student Society (GSS) is the official representative organization of all graduate students at the University of Windsor, pursuant to Bill 184, College and University Student Associations Act, 2011 of the Province of Ontario.
                     </p>
                     <p>
-                        Types of care include: acute care (sore throat, sprains, fever, flu, etc), physical exams (body check), minor surgery (stitches removal, etc), allergy injections, contraception, pregnancy tests, immunizations, sexually transmitted disease testing and treatment, counselling, etc.
+                    The Society was established and incorporated in 1980. The founding leaders were inspired by a popular national trend in that era to establish a unified voice for masters' students, as done on many other campuses across Canada.
                     </p>
                     <p>
-                        The completion of forms requires an appointment with a physician without exception. Reception will discuss associated fees when booking the appointments.
+                    Since its inception, GSS has been crafted with governance, processes and an increasing value proposition to its members. The value proposition generally includes programs, which comprise of services and events, designed to advance and defend the interest of member students.
+
+
                     </p>
                 </div>
             </section>
