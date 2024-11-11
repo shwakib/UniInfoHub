@@ -2,6 +2,9 @@ import React from 'react';
 import Navbar from '../header/navbar';
 import Footer from '../footer/footer';
 import GSSBanner from '../../assets/image/GSSBanner.png';
+import GSSImage from '../../assets/image/GSSImage.png';
+import GSSMain from '../../assets/image/GSSMain.png';
+
 import '../../css/gssprovider.css';
 import '../../css/landing.css';
 import HealthServices from '../../assets/image/HealthServices.png';
@@ -57,7 +60,7 @@ function GSSProvider() {
                     Fridays we close for lunch from 12:00pm-1:00 pm.</p>
                     <p>Located on the second floor of the CAW Student Centre room 242</p>
 
-                    <img src={HealthServices} alt="Nurse taking a student's blood pressure" className="health-image" />
+                    <img src={GSSMain} alt="Nurse taking a student's blood pressure" className="health-image" />
 
                     <h3>The History</h3>
                     <p>
@@ -85,17 +88,16 @@ function GSSProvider() {
             <section className="our-clinic">
                 <div className="clinic-content">
                     <div className="clinic-text">
-                        <h2>Our Clinic</h2>
+                        <h2>Our Volunteers</h2>
                         <p>
-                           We place you first, work to limit out-of-pocket expenses for students, and seek partnerships with you in personal health.Caring for University of Windsor students is our number one priority.Caring for University of Windsor students is our number one priority.Caring for University of Windsor students is our number one priority.Caring for University of Windsor students is our number one priority.
+                        We are hosting a cricket tournament on June 8,9 & 15 and we are looking for a team of volunteers for all three days. We have two roles: scorekeeper & check-in, job descriptions will be provided upon selection.
                         </p>
                         <p>
-                            Located on the second floor of the CAW Student Centre, Room 242, our medical clinic offers health care visits with doctors and nurses.
-                        </p>
+                        Volunteers who volunteer for 3 shifts over the three days will receive a $50 dollar gift certificate, and GSS swag! The volunteers will be given their gift cards on their last shift. Shifts are 9:00 AM – 2:00 PM & 1:30 PM – 6:00 PM. Please apply for a volunteer position by June 1 at 4 PM. Light snacks will be provided.    </p>
                         <a href="link-to-appointment-booking" className="appointment-link">Book an Appointment</a>
                     </div>
                     <div className="clinic-image-container">
-                        <img src={Emergency} alt="Nurse wearing mask and safety goggles" className="clinic-image" />
+                        <img src={GSSImage} alt="Nurse wearing mask and safety goggles" className="clinic-image" />
                     </div>
                 </div>
             </section>
@@ -111,7 +113,7 @@ function GSSProvider() {
             </section>
 
             {/* Our Clinic Section */}
-            <section className="our-clinic">
+            {/* <section className="our-clinic">
                 <div className="clinic-content">
                     <div className="clinic-text">
                         <h2>Our Clinic</h2>
@@ -124,10 +126,10 @@ function GSSProvider() {
                         <a href="link-to-appointment-booking" className="appointment-link">Book an Appointment</a>
                     </div>
                     <div className="clinic-image-container">
-                        <img src={OurClinicImage} alt="Nurse wearing mask and safety goggles" className="clinic-image" />
+                        <img src={GSSImage} alt="Nurse wearing mask and safety goggles" className="clinic-image" />
                     </div>
                 </div>
-            </section>
+            </section> */}
 
 
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../header/navbar';
 import Footer from '../footer/footer';
-import GSSBanner from '../../assets/image/GSSBanner.png';
+import getgscbanner from '../../assets/image/getgscbanner.png';
 import '../../css/gssprovider.css';
 import '../../css/landing.css';
 import HealthServices from '../../assets/image/HealthServices.png';
@@ -38,7 +38,7 @@ function GetGSC() {
         {/* Banner Section */}
         <section className="hero-section">
             <div className="hero-image-container">
-                <img src={GSSBanner} alt="Students working together in a library" className="hero-image" />
+                <img src={getgscbanner} alt="Students working together in a library" className="hero-image" />
                 
             </div>
         </section>
@@ -48,7 +48,7 @@ function GetGSC() {
 
             {/* Student Health Services Section */}
             <section className="health-services">
-                <h2>Student Health Services</h2>
+                <h2>Basic Green Shield Health Insurance Plan</h2>
                 <p>To book an appointment, please call <strong>(519) 973-7002</strong></p>
 
                 <div className="health-info">
@@ -59,24 +59,21 @@ function GetGSC() {
 
                     <img src={HealthServices} alt="Nurse taking a student's blood pressure" className="health-image" />
 
-                    <h3>Instruction</h3>
+                    <h3>GSHIP & FEES – Green Shield Health Insurance Plan (OHIP Equivalent) & Feesn</h3>
                     <p>
-                        Our medical team of doctors and nurses provide a range of health services to support your emotional, physical, and personal well-being while studying at the University of Windsor.
+                    The GSHIP Administrator is Marisa Bonasso who is located on the 2nd Floor of Laurier Hall in the International Student Centre.
                     </p>
                     <p>
-                        Types of care include: acute care (sore throat, sprains, fever, flu, etc), physical exams (body check), minor surgery (stitches removal, etc), allergy injections, contraception, pregnancy tests, immunizations, sexually transmitted disease testing and treatment, counselling, etc.
-                    </p>
+                    GSHIP is the equivalent to the Ontario Provincial Government’s Ontario Health Insurance Plan (OHIP) coverage.  </p>
                     <p>
-                        The completion of forms requires an appointment with a physician without exception. Reception will discuss associated fees when booking the appointments.
-                    </p>
+                    It provides the registered International Students with the medically necessary coverage for services and treatments normally covered by the OHIP for an Ontario resident in all of Canada.</p>
                 </div>
             </section>
 
             {/* Urgent Medical Concern Message Section */}
             <section className="urgent-message">
                 <p>
-                    IF YOU HAVE AN URGENT MEDICAL CONCERN PLEASE GO TO THE NEAREST WALK-IN CLINIC OR EMERGENCY ROOM OR CONTACT TELEHEALTH AT 1-866-797-0000.
-                </p>
+                If you register for the first time in the WINTER semester, your coverage will be from January 1st – April 30th. If you arrive one month earlier, in December, you can request to be enrolled in the health insurance coverage for an additional 1 month fee.  </p>
             </section>
 
             {/* Emergancy Assistance Section */}
@@ -101,10 +98,9 @@ function GetGSC() {
             {/* Important Updates Section */}
             <section className="health-services">
                 <div className="health-info">
-                    <h3>Instruction</h3>
+                    <h3>Green Shield Canada Health Cards </h3>
                     <p>
-                    *Patients who require that a Form, Medical Certificate or Note be completed by a physician, should contact the front desk to book an appointment.  A hardcopy of the requested form must be brougt into the office (not emailed) before the appointment.  The doctor will review the form with the patient during the booked appointment.  A price will be quoted based on the individual form.  Debit, Visa and Matercard are all acceptable forms of payment.
-                    </p>
+                    All NEW registered International Students will receive an email from Green Shield Canada (GSC) within the first month after classes begin in the student's first semester. The email will include instructions on how to register and download your electronic copy of the green shield card. You will need to present your GSC OHIP Equivalent health card when visiting any health care provider or any medical facility for any medical services that are covered under this plan in Canada. You must carry your GSC health card with you at all times or be able to present an electronic version on your phone. Your GSC health card does not expire, the policy does, so please do not discard the GSC health card until you no longer meet the eligibility criteria.</p>
                 </div>
             </section>
 

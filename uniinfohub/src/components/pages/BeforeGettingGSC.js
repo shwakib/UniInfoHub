@@ -1,12 +1,12 @@
 import React from 'react';
 import Navbar from '../header/navbar';
 import Footer from '../footer/footer';
-import GSSBanner from '../../assets/image/GSSBanner.png';
+import actiactiimgbanner from '../../assets/image/actiactiimgbanner.png';
 import '../../css/gssprovider.css';
 import '../../css/landing.css';
 import HealthServices from '../../assets/image/HealthServices.png';
 // Replace the path below with the actual path of the new clinic image
-import OurClinicImage from '../../assets/image/OurClinicImage.png';
+import activationimg from '../../assets/image/activationimg.png';
 import Emergency from '../../assets/image/Emergency.png';
 import BusPass from '../../assets/image/BusPass.png';
 import BusSchedule from '../../assets/image/BusSchedule.png';
@@ -38,7 +38,7 @@ function BeforeGettingGSC() {
         {/* Banner Section */}
         <section className="hero-section">
             <div className="hero-image-container">
-                <img src={GSSBanner} alt="Students working together in a library" className="hero-image" />
+                <img src={actiactiimgbanner} alt="Students working together in a library" className="hero-image" />
                 
             </div>
         </section>
@@ -59,15 +59,12 @@ function BeforeGettingGSC() {
 
                     <img src={HealthServices} alt="Nurse taking a student's blood pressure" className="health-image" />
 
-                    <h3>Instruction</h3>
+                    <h3>Plan Activation</h3>
                     <p>
-                        Our medical team of doctors and nurses provide a range of health services to support your emotional, physical, and personal well-being while studying at the University of Windsor.
+                    The first 6 weeks of the fall semester intake, the first 6 weeks of the winter semester intake or during the first 6 weeks of the summer semester intake, this is known as the “blackout period”.
                     </p>
                     <p>
-                        Types of care include: acute care (sore throat, sprains, fever, flu, etc), physical exams (body check), minor surgery (stitches removal, etc), allergy injections, contraception, pregnancy tests, immunizations, sexually transmitted disease testing and treatment, counselling, etc.
-                    </p>
-                    <p>
-                        The completion of forms requires an appointment with a physician without exception. Reception will discuss associated fees when booking the appointments.
+                    This means that until the opt-in, opt out and add/drop deadlines have passed, no full-time graduate student will be activated for Green Shield during this period, until GSS obtains a master list from the Registrar’s office and Green Shield (for the opt-out list) before being able to activate any graduate students.
                     </p>
                 </div>
             </section>
@@ -83,12 +80,18 @@ function BeforeGettingGSC() {
             <section className="our-clinic">
                 <div className="clinic-content">
                     <div className="clinic-text">
-                        <h2>Our Clinic</h2>
+                        <h2>How Registraton Works</h2>
                         <p>
-                           We place you first, work to limit out-of-pocket expenses for students, and seek partnerships with you in personal health.Caring for University of Windsor students is our number one priority.Caring for University of Windsor students is our number one priority.Caring for University of Windsor students is our number one priority.Caring for University of Windsor students is our number one priority.
+                        Once you are activated for the Green Shield benefits plan through the GSS, you will receive an email with instructions. Then, follow these steps:
                         </p>
                         <p>
-                            Located on the second floor of the CAW Student Centre, Room 242, our medical clinic offers health care visits with doctors and nurses.
+                        1. Read the welcome email very carefully and follow all steps to register your profile on the Green Shield Canada website.
+                        </p>
+                        <p>
+                        2. Download the Green Shield phone app to submit claims from a mobile device.
+                        </p>
+                        <p>
+                        3. Alternatively, you can submit claims through the portal website, by attaching scans of invoices and documents.
                         </p>
                         <a href="link-to-appointment-booking" className="appointment-link">Book an Appointment</a>
                     </div>
@@ -122,7 +125,7 @@ function BeforeGettingGSC() {
                         <a href="link-to-appointment-booking" className="appointment-link">Book an Appointment</a>
                     </div>
                     <div className="clinic-image-container">
-                        <img src={OurClinicImage} alt="Nurse wearing mask and safety goggles" className="clinic-image" />
+                        <img src={activationimg} alt="Nurse wearing mask and safety goggles" className="clinic-image" />
                     </div>
                 </div>
             </section>
