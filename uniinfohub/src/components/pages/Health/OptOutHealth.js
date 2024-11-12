@@ -8,27 +8,49 @@ import HealthServices from '../../../assets/image/HealthServices.png';
 // Replace the path below with the actual path of the new clinic image
 import OurClinicImage from '../../../assets/image/OurClinicImage.png';
 import Emergency from '../../../assets/image/Emergency.png';
-import BusPass from '../../../assets/image/BusPass.png';
-import BusSchedule from '../../../assets/image/BusSchedule.png';
-import PrivateTransport from '../../../assets/image/PrivateTransport.png';
+import CollegeDoctors from '../../../assets/image/CollegeDoctors.png';
+import SexualHealth from '../../../assets/image/SexualHealth.png';
+import Vaccinations from '../../../assets/image/Vaccinations.png';
+import MentalHealth from '../../../assets/image/MentalHealth.png';
+import HealthClinic from '../../../assets/image/HealthClinic.png';
 
-const transitData = [
-  {
-      image: BusPass,
-      title: 'Getting a Bus Pass',
-      description: 'Information on how to get access to transit passes and bus services.'
-  },
-  {
-      image: BusSchedule,
-      title: 'Bus Schedules',
-      description: 'Details on bus schedules to navigate around the campus and city.'
-  },
-  {
-      image: PrivateTransport,
-      title: 'Private Transportation',
-      description: 'Information on private transportation options such as bike rentals and car services.'
-  }
+
+import HealthWellnessSection from '../CommonWidgets/HealthWellnessSection'; // Adjust path as needed
+
+const healthData = [
+    {
+        image: HealthServices,
+        title: 'Health services',
+        description: 'Access to health services including dentists, prescriptions, and opticians.'
+    },
+    {
+        image: CollegeDoctors,
+        title: 'College doctors and nurses',
+        description: 'Registering with the NHS and details of your college doctor and nurse.'
+    },
+    {
+        image: SexualHealth,
+        title: 'Sexual health',
+        description: 'Information about all aspects of sexual health including STIs and contraception.'
+    },
+    {
+        image: Vaccinations,
+        title: 'Important vaccinations',
+        description: 'Information about infectious diseases such as meningitis and important vaccinations.'
+    },
+    {
+        image: MentalHealth,
+        title: 'Mental health',
+        description: 'Mental health support and resources for students.'
+    },
+    {
+        image: HealthClinic,
+        title: 'Visit the Health Clinic',
+        description: 'Information about visiting the campus health clinic.'
+    }
 ];
+
+
 
 function OptOutHealth() {
   return (
@@ -160,21 +182,10 @@ Email: gship@uwindsor.ca
 
 
         </div>
-        {/* Transit & Transportation Section */}
-        <section className="transit-section">
-                <h2>Transit & Transportation</h2>
-                <div className="transit-cards-container">
-                    {transitData.map((item, index) => (
-                        <div key={index} className="transit-card">
-                            <img src={item.image} alt={item.title} className="transit-card-image" />
-                            <div className="transit-card-content">
-                                <h3 className="transit-card-title">{item.title}</h3>
-                                <p className="transit-card-description">{item.description}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
+        
+            {/* Health & Wellness Section */}
+            <HealthWellnessSection healthData={healthData} />
+
 
 
         <Footer />
