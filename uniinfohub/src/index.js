@@ -9,7 +9,11 @@ import Transport from '../src/components/pages/landing/Transport';
 import GSSProvider from '../src/components/pages/Health/GSSProvider';
 import GetGSC from '../src/components/pages/Health/GetGSC';
 import BeforeGettingGSC from '../src/components/pages/Health/BeforeGettingGSC';
-import OptOutHealth from '../src/components/pages/Health/OptOutHealth'
+import OptOutHealth from '../src/components/pages/Health/OptOutHealth';
+import HowAndWhereToPrint from '../src/components/pages/LibraryResearch/HowAndWhereToPrint';
+import LoadUwinCard from '../src/components/pages/LibraryResearch/LoadUwinCard';
+import BookRoom from '../src/components/pages/LibraryResearch/BookRoom';
+import SearchJournal from '../src/components/pages/LibraryResearch/SearchJournal';
 
 
 
@@ -35,6 +39,12 @@ const router = createBrowserRouter([
   { path: "/before-getting-gsc", element: <BeforeGettingGSC /> },
   { path: "/opt-out-health", element: <OptOutHealth /> },
   { path: "/rent", element: <Houserent /> },
+  { path: "/how-to-print", element: <HowAndWhereToPrint /> },
+  { path: "/load-uwincard", element: <LoadUwinCard /> },
+  { path: "/book-room", element: <BookRoom /> },
+  { path: "/search-journal", element: <SearchJournal /> },
+  
+  
 
 ]);
 
