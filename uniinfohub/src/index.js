@@ -6,6 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import Houserent from './components/pages/rent/Houserent';
 // import Landing from '../src/components/pages/landing/Landing'
 import Transport from '../src/components/pages/landing/Transport';
+import GSSProvider from '../src/components/pages/Health/GSSProvider';
+import GetGSC from '../src/components/pages/Health/GetGSC';
+import BeforeGettingGSC from '../src/components/pages/Health/BeforeGettingGSC';
+import OptOutHealth from '../src/components/pages/Health/OptOutHealth'
+
+
+
+
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -20,14 +29,12 @@ const router = createBrowserRouter([
   //   path: "/landing",
   //   element: <Landing />,
   // },
-  {
-    path: "/transport",
-    element: <Transport />
-  },
-  {
-    path: "/rent",
-    element: <Houserent />
-  }
+  { path: "/transport", element: <Transport /> },
+  { path: "/gss-provider", element: <GSSProvider /> },
+  { path: "/get-gsc-card", element: <GetGSC /> },
+  { path: "/before-getting-gsc", element: <BeforeGettingGSC /> },
+  { path: "/opt-out-health", element: <OptOutHealth /> },
+  { path: "/rent", element: <Houserent /> },
 
 ]);
 

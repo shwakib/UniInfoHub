@@ -1,16 +1,16 @@
 import React from 'react';
-import Navbar from '../header/navbar';
-import Footer from '../footer/footer';
-import actiactiimgbanner from '../../assets/image/actiactiimgbanner.png';
-import '../../css/gssprovider.css';
-import '../../css/landing.css';
-import HealthServices from '../../assets/image/HealthServices.png';
+import Navbar from '../../header/navbar';
+import Footer from '../../footer/footer';
+import getgscbanner from '../../../assets/image/getgscbanner.png';
+import '../../../css/gssprovider.css';
+import '../../../css/landing.css';
+import HealthServices from '../../../assets/image/HealthServices.png';
 // Replace the path below with the actual path of the new clinic image
-import activationimg from '../../assets/image/activationimg.png';
-import Emergency from '../../assets/image/Emergency.png';
-import BusPass from '../../assets/image/BusPass.png';
-import BusSchedule from '../../assets/image/BusSchedule.png';
-import PrivateTransport from '../../assets/image/PrivateTransport.png';
+import OurClinicImage from '../../../assets/image/OurClinicImage.png';
+import Emergency from '../../../assets/image/Emergency.png';
+import BusPass from '../../../assets/image/BusPass.png';
+import BusSchedule from '../../../assets/image/BusSchedule.png';
+import PrivateTransport from '../../../assets/image/PrivateTransport.png';
 
 const transitData = [
   {
@@ -30,7 +30,7 @@ const transitData = [
   }
 ];
 
-function BeforeGettingGSC() {
+function GetGSC() {
   return (
     <>
         <Navbar />
@@ -38,7 +38,7 @@ function BeforeGettingGSC() {
         {/* Banner Section */}
         <section className="hero-section">
             <div className="hero-image-container">
-                <img src={actiactiimgbanner} alt="Students working together in a library" className="hero-image" />
+                <img src={getgscbanner} alt="Students working together in a library" className="hero-image" />
                 
             </div>
         </section>
@@ -48,7 +48,7 @@ function BeforeGettingGSC() {
 
             {/* Student Health Services Section */}
             <section className="health-services">
-                <h2>Before Getting GSC</h2>
+                <h2>Basic Green Shield Health Insurance Plan</h2>
                 <p>To book an appointment, please call <strong>(519) 973-7002</strong></p>
 
                 <div className="health-info">
@@ -59,39 +59,33 @@ function BeforeGettingGSC() {
 
                     <img src={HealthServices} alt="Nurse taking a student's blood pressure" className="health-image" />
 
-                    <h3>Plan Activation</h3>
+                    <h3>GSHIP & FEES – Green Shield Health Insurance Plan (OHIP Equivalent) & Feesn</h3>
                     <p>
-                    The first 6 weeks of the fall semester intake, the first 6 weeks of the winter semester intake or during the first 6 weeks of the summer semester intake, this is known as the “blackout period”.
+                    The GSHIP Administrator is Marisa Bonasso who is located on the 2nd Floor of Laurier Hall in the International Student Centre.
                     </p>
                     <p>
-                    This means that until the opt-in, opt out and add/drop deadlines have passed, no full-time graduate student will be activated for Green Shield during this period, until GSS obtains a master list from the Registrar’s office and Green Shield (for the opt-out list) before being able to activate any graduate students.
-                    </p>
+                    GSHIP is the equivalent to the Ontario Provincial Government’s Ontario Health Insurance Plan (OHIP) coverage.  </p>
+                    <p>
+                    It provides the registered International Students with the medically necessary coverage for services and treatments normally covered by the OHIP for an Ontario resident in all of Canada.</p>
                 </div>
             </section>
 
             {/* Urgent Medical Concern Message Section */}
             <section className="urgent-message">
                 <p>
-                    IF YOU HAVE AN URGENT MEDICAL CONCERN PLEASE GO TO THE NEAREST WALK-IN CLINIC OR EMERGENCY ROOM OR CONTACT TELEHEALTH AT 1-866-797-0000.
-                </p>
+                If you register for the first time in the WINTER semester, your coverage will be from January 1st – April 30th. If you arrive one month earlier, in December, you can request to be enrolled in the health insurance coverage for an additional 1 month fee.  </p>
             </section>
 
             {/* Emergancy Assistance Section */}
             <section className="our-clinic">
                 <div className="clinic-content">
                     <div className="clinic-text">
-                        <h2>How Registraton Works</h2>
+                        <h2>Our Clinic</h2>
                         <p>
-                        Once you are activated for the Green Shield benefits plan through the GSS, you will receive an email with instructions. Then, follow these steps:
+                           We place you first, work to limit out-of-pocket expenses for students, and seek partnerships with you in personal health.Caring for University of Windsor students is our number one priority.Caring for University of Windsor students is our number one priority.Caring for University of Windsor students is our number one priority.Caring for University of Windsor students is our number one priority.
                         </p>
                         <p>
-                        1. Read the welcome email very carefully and follow all steps to register your profile on the Green Shield Canada website.
-                        </p>
-                        <p>
-                        2. Download the Green Shield phone app to submit claims from a mobile device.
-                        </p>
-                        <p>
-                        3. Alternatively, you can submit claims through the portal website, by attaching scans of invoices and documents.
+                            Located on the second floor of the CAW Student Centre, Room 242, our medical clinic offers health care visits with doctors and nurses.
                         </p>
                         <a href="link-to-appointment-booking" className="appointment-link">Book an Appointment</a>
                     </div>
@@ -104,10 +98,9 @@ function BeforeGettingGSC() {
             {/* Important Updates Section */}
             <section className="health-services">
                 <div className="health-info">
-                    <h3>Instruction</h3>
+                    <h3>Green Shield Canada Health Cards </h3>
                     <p>
-                    *Patients who require that a Form, Medical Certificate or Note be completed by a physician, should contact the front desk to book an appointment.  A hardcopy of the requested form must be brougt into the office (not emailed) before the appointment.  The doctor will review the form with the patient during the booked appointment.  A price will be quoted based on the individual form.  Debit, Visa and Matercard are all acceptable forms of payment.
-                    </p>
+                    All NEW registered International Students will receive an email from Green Shield Canada (GSC) within the first month after classes begin in the student's first semester. The email will include instructions on how to register and download your electronic copy of the green shield card. You will need to present your GSC OHIP Equivalent health card when visiting any health care provider or any medical facility for any medical services that are covered under this plan in Canada. You must carry your GSC health card with you at all times or be able to present an electronic version on your phone. Your GSC health card does not expire, the policy does, so please do not discard the GSC health card until you no longer meet the eligibility criteria.</p>
                 </div>
             </section>
 
@@ -125,7 +118,7 @@ function BeforeGettingGSC() {
                         <a href="link-to-appointment-booking" className="appointment-link">Book an Appointment</a>
                     </div>
                     <div className="clinic-image-container">
-                        <img src={activationimg} alt="Nurse wearing mask and safety goggles" className="clinic-image" />
+                        <img src={OurClinicImage} alt="Nurse wearing mask and safety goggles" className="clinic-image" />
                     </div>
                 </div>
             </section>
@@ -154,4 +147,4 @@ function BeforeGettingGSC() {
   );
 }
 
-export default BeforeGettingGSC;
+export default GetGSC;

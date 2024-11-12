@@ -1,16 +1,16 @@
 import React from 'react';
-import Navbar from '../header/navbar';
-import Footer from '../footer/footer';
-import optoutbanner from '../../assets/image/optoutbanner.png';
-import '../../css/gssprovider.css';
-import '../../css/landing.css';
-import HealthServices from '../../assets/image/HealthServices.png';
+import Navbar from '../../header/navbar';
+import Footer from '../../footer/footer';
+import optoutbanner from '../../../assets/image/optoutbanner.png';
+import '../../../css/gssprovider.css';
+import '../../../css/landing.css';
+import HealthServices from '../../../assets/image/HealthServices.png';
 // Replace the path below with the actual path of the new clinic image
-import OurClinicImage from '../../assets/image/OurClinicImage.png';
-import Emergency from '../../assets/image/Emergency.png';
-import BusPass from '../../assets/image/BusPass.png';
-import BusSchedule from '../../assets/image/BusSchedule.png';
-import PrivateTransport from '../../assets/image/PrivateTransport.png';
+import OurClinicImage from '../../../assets/image/OurClinicImage.png';
+import Emergency from '../../../assets/image/Emergency.png';
+import BusPass from '../../../assets/image/BusPass.png';
+import BusSchedule from '../../../assets/image/BusSchedule.png';
+import PrivateTransport from '../../../assets/image/PrivateTransport.png';
 
 const transitData = [
   {
@@ -121,16 +121,16 @@ If you're unsure whether your existing coverage qualifies, you can contact the G
                 <div className="health-info">
                     <h3>Important Things to Consider</h3>
                     <p>
-                    -->Opt-Out Deadlines: Opting out of the GSC health insurance plan is time-sensitive. Opt-out periods usually happen at the beginning of each semester. If you miss the deadline, you will be charged for the insurance fees for the entire academic year. Be sure to confirm the exact dates on the GSC website or via the student portal.
+                    Opt-Out Deadlines: Opting out of the GSC health insurance plan is time-sensitive. Opt-out periods usually happen at the beginning of each semester. If you miss the deadline, you will be charged for the insurance fees for the entire academic year. Be sure to confirm the exact dates on the GSC website or via the student portal.
                     </p>
                     <p>
-                    -->Impact on Coverage: Once you opt out, you will lose access to the health and dental insurance provided by the GSC. Be sure you have adequate alternative coverage in place before opting out.
+                    Impact on Coverage: Once you opt out, you will lose access to the health and dental insurance provided by the GSC. Be sure you have adequate alternative coverage in place before opting out.
                     </p>
                     <p>
-                    -->Partial Opt-Out: In some cases, you may be able to opt out of only the health insurance portion or other specific services offered by the GSC, rather than the entire membership. Be sure to check the details on the form for any partial opt-out options.
+                    Partial Opt-Out: In some cases, you may be able to opt out of only the health insurance portion or other specific services offered by the GSC, rather than the entire membership. Be sure to check the details on the form for any partial opt-out options.
                     </p>
                     <p>
-                    -->Seek Clarification: If you're unsure about your eligibility or need assistance with the opt-out process, it's always a good idea to contact the GSC directly. They can provide further guidance on how to proceed and clarify any specific questions you may have.
+                    Seek Clarification: If you're unsure about your eligibility or need assistance with the opt-out process, it's always a good idea to contact the GSC directly. They can provide further guidance on how to proceed and clarify any specific questions you may have.
                     </p>
                 </div>
             </section>
