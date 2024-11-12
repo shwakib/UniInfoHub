@@ -31,10 +31,10 @@ function Navbar() {
         <li>
           <a href="#library">LIBRARY & RESEARCH</a>
           <ul className="dropdown">
-            <li><a href="#how-to-print">How & Where to Print</a></li>
-            <li><a href="#laod-uwincard">Load UWINcard</a></li>
-            <li><a href="#book-room">Book a Room in the Leddy Library & Amenities</a></li>
-            <li><a href="#search-journal">Look for Research Papers in OMNI Library</a></li>
+            <li><a href="/how-to-print">How & Where to Print</a></li>
+            <li><a href="/load-uwincard">Load UWINcard</a></li>
+            <li><a href="/book-room">Book a Room in the Leddy Library & Amenities</a></li>
+            <li><a href="/search-journal">Look for Research Papers in OMNI Library</a></li>
           </ul>
         </li>
         <li>
