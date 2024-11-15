@@ -4,7 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Landing from '../src/components/pages/landing/Landing'
-import Transport from '../src/components/pages/landing/Transport'
+import Transport from '../src/components/pages/transport/Transport'
+// import BeforeGettingBusPass from '../src/components/pages/transport/BeforeGettingBusPass'
+import GetBusPass from '../src/components/pages/transport/GetBusPass'
+import RefillBusPass from '../src/components/pages/transport/RefillBusPass'
+import Studentservices from '../src/components/pages/services/Studentservices' 
+import Rentingrooms from '../src/components/pages/services/Rentingrooms' 
+import Drivinglicense from '../src/components/pages/services/Drivinglicense' 
+import Accommodation from '../src/components/pages/services/Accommodation' 
+
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -22,6 +31,41 @@ const router = createBrowserRouter([
   {
     path: "/transport",
     element: <Transport />
+  },
+  // {
+  //   path: "/transport/beforegettingbuspass",
+  //   element: <BeforeGettingBusPass />
+
+  // },
+  {
+    path: "/transport/getbuspass",
+    element: <GetBusPass />
+
+  },
+  {
+    path: "/transport/refillbuspass",
+    element: <RefillBusPass />
+
+  },
+  {
+    path: "/services/Studentservices",
+    element: <Studentservices />
+
+  },
+  {
+    path: "/services/Accommodation",
+    element: <Accommodation />
+
+  },
+  {
+    path: "/services/Drivinglicense",
+    element: <Drivinglicense />
+
+  },
+  {
+    path: "/services/Rentingrooms",
+    element: <Rentingrooms />
+
   },
 
 ]);

@@ -1,0 +1,81 @@
+/* General styling for the deadlines, periods, and costs section */
+.deadlines-periods-costs-section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.deadlines-periods-costs-section h2 {
+    font-size: 2em;
+    color: #1e3a78; /* Dark blue color */
+    margin-bottom: 10px;
+}
+
+.header-line {
+    border: 1px solid #1e3a78;
+    margin-bottom: 30px;
+}
+
+.on-this-page {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.on-this-page h4 {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #1e3a78;
+    margin-bottom: 10px;
+}
+
+.on-this-page ul {
+    list-style: none;
+    padding: 0;
+}
+
+.on-this-page li {
+    margin-bottom: 8px;
+}
+
+.on-this-page a {
+    text-decoration: none;
+    color: #0073e6;
+    transition: color 0.3s;
+}
+
+.on-this-page a:hover {
+    color: #005bb5;
+}
+
+.semester-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.semester-section h3 {
+    font-size: 1.5em;
+    color: #1e3a78;
+    margin-bottom: 10px;
+}
+
+.semester-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.semester-section li {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1em;
+}
+
+.semester-section li strong {
+    color: #000;
+}
