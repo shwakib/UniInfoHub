@@ -9,7 +9,7 @@ body {
 /* Navbar, Banner, and Footer will remain outside the main content container */
 
 /* Hero Section */
-.hero-section {
+.banner-section {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -17,19 +17,19 @@ body {
     height: 400px;
 }
 
-.hero-image-container {
+.banner-image-container {
     position: relative;
     width: 100%;
     height: auto;
 }
 
 
-.hero-image {
+.banner-image {
     width: 100%;
     height: auto;
 }
 
-.hero-text {
+/* .hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -38,7 +38,7 @@ body {
     text-align: center;
     font-size: 2.5em;
     font-weight: bold;
-}
+} */
 
 /* Main Content Section */
 .main-content {

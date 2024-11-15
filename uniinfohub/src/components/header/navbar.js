@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../../assets/image/Uniinfohub_logo.png';
-import { Link } from 'react-router-dom';
 import '../../css/navbar.css';
 
 function Navbar() {
@@ -11,12 +10,12 @@ function Navbar() {
       </div>
       <ul className="navbar-links">
       <li>
-          <Link to="#health">HEALTH</Link>
+          <a href="#health">HEALTH</a>
           <ul className="dropdown">
-            <li><Link to="/gss-provider">GSS & Provider - Green Shield Canada</Link></li>
-            <li><Link to="/get-gsc-card">How to get GSC Card</Link></li>
-            <li><Link to="/before-getting-gsc">Before getting GSC Card</Link></li>
-            <li><Link to="/opt-out-health">Opt out from Health Insurance</Link></li>
+            <li><a href="/gss-provider">GSS & Provider - Green Shield Canada</a></li>
+            <li><a href="/get-gsc-card">How to get GSC Card</a></li>
+            <li><a href="/before-getting-gsc">Before getting GSC Card</a></li>
+            <li><a href="/opt-out-health">Opt out from Health Insurance</a></li>
           </ul>
         </li>
         <li>
