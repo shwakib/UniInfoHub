@@ -14,12 +14,12 @@ import HowAndWhereToPrint from '../src/components/pages/LibraryResearch/HowAndWh
 import LoadUwinCard from '../src/components/pages/LibraryResearch/LoadUwinCard';
 import BookRoom from '../src/components/pages/LibraryResearch/BookRoom';
 import SearchJournal from '../src/components/pages/LibraryResearch/SearchJournal';
-import GetBusPass from '../src/components/pages/transport/GetBusPass'
-import RefillBusPass from '../src/components/pages/transport/RefillBusPass'
-import Studentservices from '../src/components/pages/services/Studentservices' 
-import Rentingrooms from '../src/components/pages/services/Rentingrooms' 
-import Drivinglicense from '../src/components/pages/services/Drivinglicense' 
-import Accommodation from '../src/components/pages/services/Accommodation' 
+import GetBusPass from '../src/components/pages/transport/GetBusPass';
+import RefillBusPass from '../src/components/pages/transport/RefillBusPass';
+import Studentservices from '../src/components/pages/services/Studentservices';
+import Rentingrooms from '../src/components/pages/services/Rentingrooms';
+import Drivinglicense from '../src/components/pages/services/Drivinglicense'; 
+import Accommodation from '../src/components/pages/services/Accommodation';
 
 const router = createBrowserRouter([
   {
