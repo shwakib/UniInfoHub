@@ -10,10 +10,10 @@
 //             <Navbar />
 
 //             {/* Bus Pass Banner Section */}
-//             <section className="hero-section">
-//                 <div className="hero-image-container">
-//                     <img src={bus_pass} alt="Bus Pass Service" className="hero-image" />
-//                     <div className="hero-text">
+//             <section className="transport-hero-section">
+//                 <div className="transport-hero-image-container">
+//                     <img src={bus_pass} alt="Bus Pass Service" className="transport-hero-image" />
+//                     <div className="transport-hero-text">
 //                         <h1>Before getting your Bus Pass!</h1>
 //                     </div>
 //                 </div>

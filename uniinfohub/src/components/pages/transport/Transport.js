@@ -5,7 +5,7 @@ import BusPass from '../../../assets/image/BusPass.png';
 import BusSchedule from '../../../assets/image/BusSchedule.png';
 import PrivateTransport from '../../../assets/image/PrivateTransport.png';
 import '../../../css/transport.css';
-import '../../../css/landing.css';
+// import '../../../css/landing.css';
 import Footer from '../../footer/footer';
 import Navbar from '../../header/navbar';
 import React, { useState } from 'react';

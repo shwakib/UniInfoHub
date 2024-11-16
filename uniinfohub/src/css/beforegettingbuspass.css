@@ -1,25 +1,25 @@
 
-.hero-section {
+.transport-hero-section {
     position: relative;
     text-align: left;
     color: white;
 }
 
-.hero-image-container {
+.transport-hero-image-container {
     position: relative;
     width: 98%;
     height: 800px;
     
 }
 
-.hero-image {
+.transport-hero-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(0.7);
 }
 
-.hero-text {
+.transport-hero-text {
     position: absolute;
     top: 30%;
     left: 25%;

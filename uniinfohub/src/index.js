@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Houserent from './components/pages/rent/Houserent';
-import Transport from '../src/components/pages/landing/Transport';
+import Transport from './components/pages/transport/Transport';
 import GSSProvider from '../src/components/pages/Health/GSSProvider';
 import GetGSC from '../src/components/pages/Health/GetGSC';
 import BeforeGettingGSC from '../src/components/pages/Health/BeforeGettingGSC';
@@ -17,7 +17,7 @@ import SearchJournal from '../src/components/pages/LibraryResearch/SearchJournal
 import GetBusPass from '../src/components/pages/transport/GetBusPass';
 import RefillBusPass from '../src/components/pages/transport/RefillBusPass';
 import Studentservices from '../src/components/pages/services/Studentservices';
-import Rentingrooms from '../src/components/pages/services/Rentingrooms';
+// import Rentingrooms from '../src/components/pages/services/Rentingrooms';
 import Drivinglicense from '../src/components/pages/services/Drivinglicense'; 
 import Accommodation from '../src/components/pages/services/Accommodation';
 
@@ -35,11 +35,11 @@ const router = createBrowserRouter([
   { path: "/how-to-print", element: <HowAndWhereToPrint /> },
   { path: "/load-uwincard", element: <LoadUwinCard /> },
   { path: "/book-room", element: <BookRoom /> },
-  { path: "/transport/getbuspass", element: <GetBusPass /> },
-  { path: "/transport/refillbuspass", element: <RefillBusPass /> },
-  { path: "/services/Studentservices", element: <Studentservices /> },
-  { path: "/services/Accommodation", element: <Accommodation /> },
-  { path: "/services/Drivinglicense", element: <Drivinglicense /> },
+  { path: "/beforebuspass", element: <GetBusPass /> },
+  { path: "/refillbuspass", element: <RefillBusPass /> },
+  { path: "/studentservices", element: <Studentservices /> },
+  { path: "/accommodation", element: <Accommodation /> },
+  { path: "/drivinglicense", element: <Drivinglicense /> },
   { path: "/search-journal", element: <SearchJournal /> },
 ]);
 
