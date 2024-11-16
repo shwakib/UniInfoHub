@@ -1,10 +1,35 @@
 // import React from "react";
 import Bustransport from '../../../assets/image/Bustransport.jpg';
 import Bustransport2 from '../../../assets/image/Bustransport2.jpg';
+import BusPass from '../../../assets/image/BusPass.png';
+import BusSchedule from '../../../assets/image/BusSchedule.png';
+import PrivateTransport from '../../../assets/image/PrivateTransport.png';
 import '../../../css/transport.css';
+import '../../../css/landing.css';
 import Footer from '../../footer/footer';
 import Navbar from '../../header/navbar';
 import React, { useState } from 'react';
+
+
+
+
+const transitData = [
+    {
+        image: BusPass,
+        title: 'Getting a Bus Pass',
+        description: 'Information on how to get access to transit passes and bus services.'
+    },
+    {
+        image: BusSchedule,
+        title: 'Bus Schedules',
+        description: 'Details on bus schedules to navigate around the campus and city.'
+    },
+    {
+        image: PrivateTransport,
+        title: 'Private Transportation',
+        description: 'Information on private transportation options such as bike rentals and car services.'
+    }
+];
 
 function Transport() {
     const [openQuestion, setOpenQuestion] = useState(null);
@@ -13,7 +38,7 @@ function Transport() {
     const toggleQuestion = (index) => {
         setOpenQuestion(openQuestion === index ? null : index);
     };
-
+  
     
     return (
         <div>
@@ -34,16 +59,17 @@ function Transport() {
                         <p>All information regarding bus passes at Windsor</p>
                     </div>
                     <div className= " bus-pas-info">
-                        <h3>Info</h3>
+                        <h3>Information</h3>
                         <p> The UWSA, OPUS, and GSS negotiated a universal student bus pass (U-Pass) for UWSA, OPUS, and GSS students. To use U-Pass, students will need to tap their U-Pass cards on the readers upon boarding the bus. </p>
                         <p> The U-Pass allows members to have unlimited rides on the regular Transit Windsor City service during the fall/winter 2024/2025 semesters.</p>
                     </div>
                     <div className="driving-today-section">
                         <h3>Driving Today for a Better Tomorrow</h3>
                         <p>Transit Windsor operates the public transit for the municipality of the City of Windsor. You can view the route maps and schedules for the service are map at the Transit Windsor website at www.citywindsor.ca/transitwindsor.
-                        You can also view the terms and conditions and other useful information on the site.
+                        {/* You can also view the terms and conditions and other useful information on the site. */}
                         </p>
                     </div>
+
 
                      {/* Pickup Information Box */}
                      <div class="container">
@@ -61,6 +87,10 @@ function Transport() {
             {/* Pick Up Your Pass Section */}
             <div className="pick-up-pass-section">
                 <h3>PICK UP YOUR PASS!</h3>
+                      <section className="transport-banner">
+                        <img src={Bustransport} alt="Bus at Windsor" className="banner-image" />
+                
+                    </section>
 
                 <div className="faq-item">
                     <h4 onClick={() => toggleQuestion(1)}>
@@ -143,7 +173,25 @@ function Transport() {
                     </h4>
                     {openQuestion === 6 && (
                         <div className="faq-answer">
-                            <p>You must meet certain eligibility criteria to opt out of the bus pass program. More information will be available on the website.</p>
+                            <p>You must meet certain eligibility criteria to opt out of the bus pass program. 
+                            <ol>
+                        <li>
+                            I currently reside outside the Windsor Transit service area and will reside in the eligible postal code area for the duration of the Fall 2024 semester 
+                            (N0P, N7L, N7M, N0L, N0R, N9V, N8H, N8L, N8M, N8N, N9K, N9Y, N9J).
+                            <p>Please provide photo ID with your address and one additional piece of proof with your address (bank statement, bill, paystub, shipping label).</p>
+                        </li>
+                        <li>
+                            I am the Registered Permit Holder of a parking pass purchased at the University of Windsor.
+                            <p>Please provide photo ID and a photo of the parking pass.</p>
+                        </li>
+                        <li>
+                            I am participating in a student exchange program outside the Windsor Transit service area during Winter 2024 semester.
+                        </li>
+                        <li>
+                            My classes are all online for the Winter 2024 semester.
+                        </li>
+                    </ol>
+                            </p>
                         </div>
                     )}
                 </div>
@@ -226,7 +274,24 @@ function Transport() {
                     </div>
                 </div>
             </div>
+        
         </section>
+                </div>
+                
+            </section>
+                {/* Transit & Transportation Section */}
+                <section className="transit-section">
+                <h2>Transit & Transportation</h2>
+                <div className="transit-cards-container">
+                    {transitData.map((item, index) => (
+                        <div key={index} className="transit-card">
+                            <img src={item.image} alt={item.title} className="transit-card-image" />
+                            <div className="transit-card-content">
+                                <h3 className="transit-card-title">{item.title}</h3>
+                                <p className="transit-card-description">{item.description}</p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </section>
 
