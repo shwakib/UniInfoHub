@@ -16,14 +16,6 @@ import Accommodation from '../src/components/pages/services/Accommodation'
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/landing",
-    element: <Landing />,
-  },
-  {
     path: "/transport",
     element: <Transport />
   },
