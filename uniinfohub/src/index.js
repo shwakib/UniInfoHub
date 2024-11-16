@@ -17,7 +17,7 @@ import SearchJournal from '../src/components/pages/LibraryResearch/SearchJournal
 import GetBusPass from '../src/components/pages/transport/GetBusPass';
 import RefillBusPass from '../src/components/pages/transport/RefillBusPass';
 import Studentservices from '../src/components/pages/services/Studentservices';
-// import Rentingrooms from '../src/components/pages/services/Rentingrooms';
+import CheckStop from './components/pages/transport/Checkstop';
 import Drivinglicense from '../src/components/pages/services/Drivinglicense'; 
 import Accommodation from '../src/components/pages/services/Accommodation';
 
@@ -35,8 +35,9 @@ const router = createBrowserRouter([
   { path: "/how-to-print", element: <HowAndWhereToPrint /> },
   { path: "/load-uwincard", element: <LoadUwinCard /> },
   { path: "/book-room", element: <BookRoom /> },
-  { path: "/beforebuspass", element: <GetBusPass /> },
+  { path: "/getbusspass", element: <GetBusPass /> },
   { path: "/refillbuspass", element: <RefillBusPass /> },
+  { path: "/checkstop", element: <CheckStop /> },
   { path: "/studentservices", element: <Studentservices /> },
   { path: "/accommodation", element: <Accommodation /> },
   { path: "/drivinglicense", element: <Drivinglicense /> },
