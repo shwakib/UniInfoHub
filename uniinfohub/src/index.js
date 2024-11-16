@@ -5,7 +5,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Houserent from './components/pages/rent/Houserent';
-// import Landing from '../src/components/pages/landing/Landing'
 import Transport from '../src/components/pages/landing/Transport';
 import GSSProvider from '../src/components/pages/Health/GSSProvider';
 import GetGSC from '../src/components/pages/Health/GetGSC';
@@ -32,27 +31,6 @@ const router = createBrowserRouter([
   { path: "/book-room", element: <BookRoom /> },
   { path: "/search-journal", element: <SearchJournal /> },
 ]);
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <App />,
-//     children: [
-//       { path: "transport", element: <Transport /> },
-//       { path: "gss-provider", element: <GSSProvider /> },
-//       { path: "get-gsc-card", element: <GetGSC /> },
-//       { path: "before-getting-gsc", element: <BeforeGettingGSC /> },
-//       { path: "opt-out-health", element: <OptOutHealth /> },
-//       { path: "rent", element: <Houserent /> },
-//       { path: "how-to-print", element: <HowAndWhereToPrint /> },
-//       { path: "load-uwincard", element: <LoadUwinCard /> },
-//       { path: "book-room", element: <BookRoom /> },
-//       { path: "search-journal", element: <SearchJournal /> },
-//     ]
-//   },
-
-// ]);
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
