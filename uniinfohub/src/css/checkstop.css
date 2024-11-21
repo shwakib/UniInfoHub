@@ -1,8 +1,7 @@
-/* Hero section styling */
 .stop-hero-section {
     position: relative;
     width: 100%;
-    height: 70vh; /* Increase height to make image taller */
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,5 +17,141 @@
 .stop-hero-image {
     width: 100%;
     height: 80%;
-    object-fit: cover; /* Ensures the image covers the entire container */
+    object-fit: cover;
+}
+
+.intro-stop-section {
+    margin: -70px 0px 0px 150px;
+    padding: 5px;
+    width: 100%;
+    max-width: 1192px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bus-schedules {
+    margin: 1rem auto;
+    padding: 1.5rem; /* Increased padding for better spacing */
+    width: 100%;
+    max-width: 1192px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    line-height: 1.6; /* Adjusted for better readability */
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    color: #003366;
+}
+
+.bus-schedule-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 15px 0; /* Increased spacing for visual appeal */
+    display: block;
+    padding: 5px;
+    border: 1px solid #ccc; /* Added border for better visibility */
+    border-radius: 5px;
+}
+
+.section-item {
+    margin-bottom: 2rem; /* Increased margin for better section spacing */
+    font-size: 1rem;
+}
+
+.section-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #003366; /* Consistent with the heading color scheme */
+}
+
+.section-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.section-item ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    font-size: 1rem;
+}
+
+.section-item ul li {
+    margin-bottom: 10px; /* Increased spacing for better readability */
+    line-height: 1.6;
+}
+
+.section-item a {
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.section-item a:hover {
+    text-decoration: underline;
+}
+
+.tip,
+.pro-tip {
+    font-style: italic;
+    color: #555;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.section-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #003366;
+}
+
+.section-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.app-list {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+}
+
+.app-item {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.app-name {
+    font-weight: bold;
+    color: #003366;
+}
+
+.app-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #003366;
+    font-size: 1rem;
+}
+
+.app-link:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Slightly darker shade on hover */
 }

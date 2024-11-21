@@ -1,0 +1,58 @@
+/* Side Navigation Styling */
+.side-nav {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.side-nav h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-item a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-item.active {
+    background-color: #0073e6;
+    color: white;
+    border: 1px solid #0073e6;
+}
+
+.nav-item.active a {
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: #0073e6;
+    border-color: #0073e6;
+}
+
+.nav-item:hover a {
+    color: white;
+}
