@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../../header/navbar';
 import Footer from '../../footer/footer';
 import getgscbanner from '../../../assets/image/getgscbanner.png';
+import actiactiimgbanner from '../../../assets/image/actiactiimgbanner.png';
 import '../../../css/gssprovider.css';
 import HealthServices from '../../../assets/image/HealthServices.png';
 // Replace the path below with the actual path of the new clinic image
@@ -15,9 +16,9 @@ function GetGSC() {
             <Navbar />
 
             {/* Banner Section */}
-            <section className="hero-section">
-                <div className="hero-image-container">
-                    <img src={getgscbanner} alt="Students working together in a library" className="hero-image" />
+            <section className="banner-section">
+                <div className="banner-image-container">
+                    <img src={getgscbanner} alt="Students working together in a library" className="banner-image" />
 
                 </div>
             </section>

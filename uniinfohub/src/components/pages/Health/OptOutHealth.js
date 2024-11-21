@@ -15,9 +15,9 @@ function OptOutHealth() {
             <Navbar />
 
             {/* Banner Section */}
-            <section className="hero-section">
-                <div className="hero-image-container">
-                    <img src={optoutbanner} alt="Students working together in a library" className="hero-image" />
+            <section className="banner-section">
+                <div className="banner-image-container">
+                    <img src={optoutbanner} alt="Students working together in a library" className="banner-image" />
 
                 </div>
             </section>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../../header/navbar';
 import Footer from '../../footer/footer';
 import actiactiimgbanner from '../../../assets/image/actiactiimgbanner.png';
@@ -9,16 +9,23 @@ import HealthServices from '../../../assets/image/HealthServices.png';
 import activationimg from '../../../assets/image/activationimg.png';
 import Emergency from '../../../assets/image/Emergency.png';
 import HealthWellness from '../../../helper/Health&Wellness';
+import Libraryservices from '../../../helper/Libraryservices';
 
 function SearchJournal() {
+    const [openQuestion, setOpenQuestion] = useState(null);
+
+    // Function to toggle a specific question
+    const toggleQuestion = (index) => {
+        setOpenQuestion(openQuestion === index ? null : index);
+    };
     return (
         <>
             <Navbar />
 
             {/* Banner Section */}
-            <section className="hero-section">
-                <div className="hero-image-container">
-                    <img src={actiactiimgbanner} alt="Students working together in a library" className="hero-image" />
+            <section className="banner-section">
+                <div className="banner-image-container">
+                    <img src={actiactiimgbanner} alt="Students working together in a library" className="banner-image" />
 
                 </div>
             </section>
@@ -55,6 +62,93 @@ function SearchJournal() {
                         IF YOU HAVE AN URGENT MEDICAL CONCERN PLEASE GO TO THE NEAREST WALK-IN CLINIC OR EMERGENCY ROOM OR CONTACT TELEHEALTH AT 1-866-797-0000.
                     </p>
                 </section>
+
+                <section className="printing-info">
+
+<h1>
+    Printing
+</h1>
+
+<p>Print documents from any desktop computer in the library, in black & white or in colour. </p>
+
+<div className="faq-item">
+    <h4 onClick={() => toggleQuestion(1)}>
+        Q. 1: What is Printing Cost?
+        <span className={`arrow ${openQuestion === 1 ? 'open' : ''}`}>▼</span>
+    </h4>
+    {openQuestion === 1 && (
+        <div className="faq-answer">
+            <h3>Cost</h3>
+            <ul>
+                <li>Black and white printing: $0.10 per page.</li>
+                <li>Colour printing: $0.26 per page.</li>
+                <li>Printing is double-sided by default on black and white printers.</li>
+            </ul>
+        </div>
+    )}
+</div>
+
+<div className="faq-item">
+    <h4 onClick={() => toggleQuestion(2)}>
+        Q. 2: How to Print
+        <span className={`arrow ${openQuestion === 2 ? 'open' : ''}`}>▼</span>
+    </h4>
+    {openQuestion === 2 && (
+        <div className="faq-answer">
+            <h3>Workstation Printing</h3>
+            <ul>
+                <li>Find an open computer workstation on the first floor of the Main Building.</li>
+                <li>Locate the computer Station Print ID as labeled on the desktop wallpaper once you've logged onto the machine.</li>
+                <li>Have your files ready on a USB flash drive or access them online from Microsoft Office, Google Drive or another cloud storage service.</li>
+                <li>Print your file(s) to one of the printers:
+                    <ul>
+                        <li><strong>Leddy Main - Monochrome</strong> (black and white)</li>
+                        <li><strong>Leddy Main - Colour</strong></li>
+                    </ul>
+                </li>
+                <li>Go to the print station located just east of the elevators on the 1st floor.</li>
+                <li>At the monitors, find and select the Station Print ID as noted. Select the file(s) you want to print, and follow the on-screen instructions to print.</li>
+                <li>Swipe your print card through the card reader with the stripe toward the light, to deduct the cost of the print from your account. A notification message will appear with the location of the printer where your print job was sent.</li>
+                <li>When you're finished printing, make sure you sign-out of all accounts and remember to take your USB drive. This will ensure that no one will be able to access your files or accounts.</li>
+            </ul>
+
+            <h3>Cloud Printing (Monochrome Only)</h3>
+            <ul>
+                <li>Connect to the <a href="link-to-cloud-printing-website">Cloud Printing Website</a>.</li>
+                <li>Select the "Main Campus" as the printer location.</li>
+                <li>Select the "Leddy Library" printer.</li>
+                <li>Click "Upload A Document".</li>
+                <li>Enter a Print ID for Job (This ID is what shows up on the print station).</li>
+                <li>Upload your document and click submit.</li>
+                <li>Go to the print station located just east of the elevators on the 1st floor.</li>
+                <li>At the monitors, find and select the Station Print ID as noted. Select the file(s) you want to print, and follow the on-screen instructions to print.</li>
+                <li>Swipe your print card through the card reader with the stripe toward the light, to deduct the cost of the print from your account. A notification message will appear with the location of the printer where your print job was sent.</li>
+                <li>When you're finished printing, make sure you sign-out of all accounts and remember to take your USB drive. This will ensure that no one will be able to access your files or accounts.</li>
+            </ul>
+        </div>
+    )}
+</div>
+
+<div className="faq-item">
+    <h4 onClick={() => toggleQuestion(3)}>
+        Q. 3: What are suggested tips and trouble shooting?
+        <span className={`arrow ${openQuestion === 3 ? 'open' : ''}`}>▼</span>
+    </h4>
+    {openQuestion === 3 && (
+        <div className="faq-answer">
+            <ul>
+                <li>Wrong characters in printout: try printing to PDF and then printing the resulting PDF file.</li>
+                <li>Test your printouts by printing 1 or 2 pages before printing large documents.</li>
+                <li>When you're finished printing, make sure you sign-out of all accounts and remember to take your USB drive. This will ensure that no one will be able to access your files or accounts.</li>
+                <li>If you do not have a UWin student card, you will need to contact the UWin Card Office.</li>
+                <li>If your print job does not go through and your account has been charged, please see the IT Help Desk staff for support.</li>
+            </ul>
+
+        </div>
+    )}
+</div>
+</section>
+
 
                 {/* Emergancy Assistance Section */}
                 <section className="our-clinic">
@@ -112,7 +206,8 @@ function SearchJournal() {
 
 
             </div>
-            <HealthWellness />
+            {/* Printing, Library & Research Section */}
+            <Libraryservices />
 
 
             <Footer />
