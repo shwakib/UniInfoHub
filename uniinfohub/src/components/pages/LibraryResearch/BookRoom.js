@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import Navbar from '../../header/navbar';
 import Footer from '../../footer/footer';
-import actiactiimgbanner from '../../../assets/image/actiactiimgbanner.png';
+import studyspace from '../../../assets/image/studyspace.png';
 import '../../../css/gssprovider.css';
 // import '../../../css/landing.css';
 import HealthServices from '../../../assets/image/HealthServices.png';
 // Replace the path below with the actual path of the new clinic image
 import activationimg from '../../../assets/image/activationimg.png';
-import Emergency from '../../../assets/image/Emergency.png';
+import wellness from '../../../assets/image/wellness.png';
 import HealthWellness from '../../../helper/Health&Wellness';
 import Libraryservices from '../../../helper/Libraryservices';
 
@@ -26,7 +26,7 @@ function BookRoom() {
             {/* Banner Section */}
             <section className="banner-section">
                 <div className="banner-image-container">
-                    <img src={actiactiimgbanner} alt="Students working together in a library" className="banner-image" />
+                    <img src={studyspace} alt="Students working together in a library" className="banner-image" />
 
                 </div>
             </section>
@@ -37,19 +37,27 @@ function BookRoom() {
                 {/* Student Health Services Section */}
                 <section className="health-services">
                     <h2>Book Room</h2>
-                    <p>To book an appointment, please call <strong>(519) 973-7002</strong></p>
+                    <p>Whether you're looking for a quiet spot to study or a space to gather with classmates and friends, the Library has a variety of spaces to meet your needs.</p>
 
                     <div className="health-info">
-                        <h3>Regular Hours</h3>
-                        <p>Monday-Thursday, 8:30am-4:30pm. Nurses hours 9am-4pm. <br />
-                            Fridays we close for lunch from 12:00pm-1:00 pm.</p>
-                        <p>Located on the second floor of the CAW Student Centre room 242</p>
+                        <h3>Types of rooms</h3>
+                        <p>Personal study rooms are bookable by individuals for personal use only. The University Health and Safety Department zones these rooms for single occupancy. 
+Use of alcohol, drugs, cigarettes, vape pens, and other smoking devices is not permitted at any time within the library. Possession or use of any of these items in the library may result in the loss of library access
+Booking.</p>
+                        <p>Available rooms are of different sizes based on individual needs.</p>
 
-                        <img src={HealthServices} alt="Nurse taking a student's blood pressure" className="health-image" />
-
-                        <h3>Plan Activation</h3>
+                        
+                        <h3>Access and terms of use</h3>
                         <p>
-                            The first 6 weeks of the fall semester intake, the first 6 weeks of the winter semester intake or during the first 6 weeks of the summer semester intake, this is known as the “blackout period”.
+                        Access to group study rooms no longer requires a key. When your booking begins, go to your room. If there are any issues, please visit the Information Desk.<br/>
+                        Checking in and out will release the room for booking by other users in case you are done early. <br/>
+                        Please cooperate with other users by leaving the room clean and in a timely fashion at the end of your booking.<br/>
+                        Markers, chalk, and other peripherals can still be signed out at the Information Desk <br/>
+                        As noise carries between these rooms and through the floor, please try to keep your voices down. <br/>
+                        Please cooperate with the library staff. We are working to ensure a safe environment for everyone on campus.<br/>
+                        Eating meals is not allowed.
+Lidded drinks are permitted.<br/>
+Use of alcohol, drugs, cigarettes, vape pens, and other smoking devices is not permitted at any time within the library. Possession or use of any of these items in the library may result in the loss of library access. <br/>
                         </p>
                         <p>
                             This means that until the opt-in, opt out and add/drop deadlines have passed, no full-time graduate student will be activated for Green Shield during this period, until GSS obtains a master list from the Registrar’s office and Green Shield (for the opt-out list) before being able to activate any graduate students.
@@ -60,7 +68,7 @@ function BookRoom() {
                 {/* Urgent Medical Concern Message Section */}
                 <section className="urgent-message">
                     <p>
-                        IF YOU HAVE AN URGENT MEDICAL CONCERN PLEASE GO TO THE NEAREST WALK-IN CLINIC OR EMERGENCY ROOM OR CONTACT TELEHEALTH AT 1-866-797-0000.
+                    Don't leave valuables like laptops, phones, or wallets unattended in study rooms or the building. Theft can happen, so keep your belongings with you. Report suspicious activity to the Information Desk in person or by phone (x3200), the Special Constable Service, or the Safe Lancer app.
                     </p>
                 </section>
 
@@ -68,23 +76,18 @@ function BookRoom() {
                 <section className="our-clinic">
                     <div className="clinic-content">
                         <div className="clinic-text">
-                            <h2>How Registraton Works</h2>
+                            <h2>Wellness Rooms</h2>
                             <p>
                                 Once you are activated for the Green Shield benefits plan through the GSS, you will receive an email with instructions. Then, follow these steps:
                             </p>
                             <p>
-                                1. Read the welcome email very carefully and follow all steps to register your profile on the Green Shield Canada website.
+                            Students are welcome to use the wellness rooms as flexible spaces to de-stress and unwind during the library’s regular hours. Rooms are available on a first-come, first-served basis with no prior booking required. Locations: 2169 (2nd floor main), 3169 (3rd floor main), and 307 (3rd floor Leddy West).
                             </p>
-                            <p>
-                                2. Download the Green Shield phone app to submit claims from a mobile device.
-                            </p>
-                            <p>
-                                3. Alternatively, you can submit claims through the portal website, by attaching scans of invoices and documents.
-                            </p>
-                            <a href="link-to-appointment-booking" className="appointment-link">Book an Appointment</a>
+                            
+                            <a href="link-to-appointment-booking" className="appointment-link">Book a Room</a>
                         </div>
                         <div className="clinic-image-container">
-                            <img src={Emergency} alt="Nurse wearing mask and safety goggles" className="clinic-image" />
+                            <img src={wellness} alt="Nurse wearing mask and safety goggles" className="clinic-image" />
                         </div>
                     </div>
                 </section>
@@ -92,10 +95,7 @@ function BookRoom() {
                 {/* Important Updates Section */}
                 <section className="health-services">
                     <div className="health-info">
-                        <h3>Instruction</h3>
-                        <p>
-                            *Patients who require that a Form, Medical Certificate or Note be completed by a physician, should contact the front desk to book an appointment.  A hardcopy of the requested form must be brougt into the office (not emailed) before the appointment.  The doctor will review the form with the patient during the booked appointment.  A price will be quoted based on the individual form.  Debit, Visa and Matercard are all acceptable forms of payment.
-                        </p>
+                        
                     </div>
                 </section>
 
@@ -189,14 +189,16 @@ function BookRoom() {
                 <section className="our-clinic">
                     <div className="clinic-content">
                         <div className="clinic-text">
-                            <h2>Our Clinic</h2>
+                            <h2>Information Desk</h2>
                             <p>
-                                We place you first, work to limit out-of-pocket expenses for students, and seek partnerships with you in personal health.Caring for University of Windsor students is our number one priority.Caring for University of Windsor students is our number one priority.Caring for University of Windsor students is our number one priority.Caring for University of Windsor students is our number one priority.
+                            The Information Desk is your first stop for borrowing & circulation, research support, and information about the library and pointing you in the right direction. We deal with all questions related to borrowing library materials, course resources and reserves and library spaces.
+
+Someone is always at the Information Desk when the Library is open, and is the best point of contact after hours and on weekends.
+
+Also located at the Information Desk are the Research Help Desk for research & reference services, and the Computer Help Desk.
                             </p>
-                            <p>
-                                Located on the second floor of the CAW Student Centre, Room 242, our medical clinic offers health care visits with doctors and nurses.
-                            </p>
-                            <a href="link-to-appointment-booking" className="appointment-link">Book an Appointment</a>
+                           
+                            <a href="link-to-appointment-booking" className="appointment-link">Book a Room</a>
                         </div>
                         <div className="clinic-image-container">
                             <img src={activationimg} alt="Nurse wearing mask and safety goggles" className="clinic-image" />
