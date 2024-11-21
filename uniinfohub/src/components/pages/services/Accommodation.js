@@ -32,6 +32,7 @@ function ResidenceInfo() {
                     <li><a href="#residence-halls">Residence Halls</a></li>
                     <li><a href="#room-assignments">Room Assignments</a></li>
                     <li><a href="#facilities-services">Facilities Services</a></li>
+                    <li><a href="#house-polices">Housing Policies</a></li>
                 </ul>
             </nav>
 
@@ -179,6 +180,16 @@ function ResidenceInfo() {
                     ))}
                 </div>
             </section>
+
+            <section id="house-polices" className="house-polices">
+                <h2>Housing Policies</h2>
+                <p>Housing and Residence Life is committed to ensuring policies and procedures are readily available to current and future residents. At this time the policies can be found throughout our website and within the residence agreement.</p>
+             
+                <p>If you do have any questions about our policies please email <strong>resservices@uwindsor.ca</strong> for support.</p>
+                
+            </section>
+
+            
         </div>
     
 
