@@ -22,7 +22,7 @@ function Navbar() {
           <a href="#transportation">TRANSPORTATION</a>
           <ul className="dropdown">
             <li><a href="/transport">Before Getting Bus Pass</a></li>
-            <li><a href="/getbusspass">Get a Bus Pass & Validity</a></li>
+            <li><a href="/getbuspass">Get a Bus Pass & Validity</a></li>
             <li><a href="/checkstop">Check Bus Schedule & Bus Stop List</a></li>
             <li><a href="/refillbuspass">Refill Bus Pass</a></li>
           </ul>

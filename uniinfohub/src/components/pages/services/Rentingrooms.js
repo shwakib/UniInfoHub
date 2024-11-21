@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../../header/navbar';
 import Footer from '../../footer/footer';
 import bus_pass from '../../../assets/image/bus_pass.png'; 
-import '../../../css/beforegettingbuspass.css';
+
 
 function StudentHub() {
     return (

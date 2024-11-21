@@ -65,8 +65,14 @@ function Transport() {
                     </div>
                     <div className="driving-today-section">
                         <h3>Driving Today for a Better Tomorrow</h3>
-                        <p>Transit Windsor operates the public transit for the municipality of the City of Windsor. You can view the route maps and schedules for the service are map at the Transit Windsor website at www.citywindsor.ca/transitwindsor.
-                        {/* You can also view the terms and conditions and other useful information on the site. */}
+                        <p>Transit Windsor operates the public transit for the municipality of the City of Windsor. You can view the route maps and schedules for the service are map at the Transit Windsor website at 
+                        {/* You can also view the terms and conditions and other useful information on the site. */} <a 
+                                href="https://windsor.mytransitride.com/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                            >
+                                 https://windsor.mytransitride.com/
+                            </a>.
                         </p>
                     </div>
 
@@ -87,10 +93,11 @@ function Transport() {
             {/* Pick Up Your Pass Section */}
             <div className="pick-up-pass-section">
                 <h3>PICK UP YOUR PASS!</h3>
-                      <section className="transport-banner">
+                      {/* <section className="transport-banner">
                         <img src={Bustransport} alt="Bus at Windsor" className="banner-image" />
                 
-                    </section>
+                    </section> */}
+                    
 
                 <div className="faq-item">
                     <h4 onClick={() => toggleQuestion(1)}>
@@ -99,7 +106,7 @@ function Transport() {
                     </h4>
                     {openQuestion === 1 && (
                         <div className="faq-answer">
-                            <p>All undergraduate students can pick up their UPass at the UWSA Offices at the following times:</p>
+                            <p>All students can pick up their UPass at the UWSA Offices at the following times:</p>
                             <p>Fall Bus Pass pick-up will begin September 4th, 2024 to September 27th in the Alumni Auditorium.</p>
                             <p>Afterward, pick-up is available at the UWSA office from Monday to Friday: 9:30am – 4:00pm.</p>
                         </div>
@@ -208,46 +215,19 @@ function Transport() {
                     )}
                 </div>
             </div>
-
-            {/* Contact Information Section */}
-            {/* <div className="contact-info-section">
-                <h3>Main Office</h3>
-                <table className="contact-table">
-                    <thead>
-                        <tr>
-                            <th>Main Office</th>
-                            <th>Contact</th>
-                            <th>Hours of Operation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Room 209,
-                            <br />
-                             2nd Floor
-                             <br /> CAW Student Centre
-                             <br />
-                              401 Sunset Ave.</td>
-                            <td>
-                                Windsor, ON, N8B 3P4
-                                <br />
-                                PHONE: (519) 971-3600
-                                <br />
-                                FAX: (519) 971-3654
-                                <br />
-                                EMAIL: <a href="mailto:uwsa@uwindsor.ca">uwsa@uwindsor.ca</a>
-                            </td>
-                            <td>
-                                Mon - Thurs: 9:30am - 4:30pm
-                                <br />
-                                Friday: 10am - 3:30pm
-                                <br />
-                                Sat & Sun: Closed
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div> */}
+            <div>
+                *Note: Students can use their <strong>student id</strong> to ride on bus if they are yet to get the bus pass. 
+            </div>
+            <div>
+                If you want to have a bus pass outside uwindsor,
+                                <a href="/refillbuspass"
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                            >
+                                 click here for more information
+                            </a>.
+                        
+            </div>
 
               {/* Contact Information Section */}
               <div className="contact-info-section">
@@ -278,6 +258,7 @@ function Transport() {
         </section>
                 </div>
                 
+                    
             </section>
                 {/* Transit & Transportation Section */}
                 <section className="transit-section">

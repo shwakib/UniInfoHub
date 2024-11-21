@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8f4f8;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #2b6777;
+    font-size: 2.8em;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+section {
+    margin-bottom: 35px;
+    border-bottom: 2px solid #bcd4e6;
+    padding-bottom: 15px;
+}
+
+h2, h3 {
+    color: #2b6777;
+    margin-bottom: 10px;
+}
+
+.requirements ul, .permit-requirements ul {
+    list-style-type: square;
+    margin-left: 25px;
+}
+
+address {
+    font-style: normal;
+    background: #eef5f9;
+    padding: 20px;
+    border-left: 5px solid #2b6777;
+    margin: 25px 0;
+}
+
+address strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.permit-requirements ul ul {
+    list-style-type: circle;
+    margin-left: 30px;
+}
+
+.note {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.container p {
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #cfdfe6;
+    border-radius: 8px;
+    background: #f7fafc;
+}
+
+a {
+    color: #2b6777;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+}
