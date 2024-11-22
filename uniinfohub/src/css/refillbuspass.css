@@ -1,5 +1,4 @@
-
-.bus-pass-outside-section {
+.refill-buspass-bus-pass-outside-section {
     padding: 40px 20px;
     max-width: 1100px;
     margin: 0 auto;
@@ -9,13 +8,13 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.bus-pass-outside-section h2 {
+.refill-buspass-bus-pass-outside-section h2 {
     font-size: 2em;
     color: #1e3a78;
     margin-bottom: 20px;
 }
 
-.bus-pass-outside-section h3 {
+.refill-buspass-bus-pass-outside-section h3 {
     font-size: 1.5em;
     color: #2c3e50;
     margin-top: 20px;
@@ -23,7 +22,7 @@
 }
 
 /* Fare Table Styles */
-.fare-table, .pricing-table {
+.refill-buspass-fare-table, .refill-buspass-pricing-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
@@ -32,36 +31,36 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.fare-table th, .fare-table td,
-.pricing-table th, .pricing-table td {
+.refill-buspass-fare-table th, .refill-buspass-fare-table td,
+.refill-buspass-pricing-table th, .refill-buspass-pricing-table td {
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
 
-.fare-table th, .pricing-table th {
+.refill-buspass-fare-table th, .refill-buspass-pricing-table th {
     background-color: #1e3a78;
     color: white;
 }
 
-.note {
+.refill-buspass-note {
     font-size: 0.9em;
     color: #555;
 }
 
 /* Cards Section Styles */
-.cards-section {
+.refill-buspass-cards-section {
     margin-top: 40px;
 }
 
-.cards-container {
+.refill-buspass-cards-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.card {
+.refill-buspass-card {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -71,27 +70,27 @@
     transition: transform 0.3s;
 }
 
-.card:hover {
+.refill-buspass-card:hover {
     transform: translateY(-5px);
 }
 
-.card-image {
+.refill-buspass-card-image {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
-.card-details {
+.refill-buspass-card-details {
     padding: 20px;
 }
 
-.card-details h3 {
+.refill-buspass-card-details h3 {
     font-size: 1.2em;
     color: #2c3e50;
     margin-bottom: 10px;
 }
 
-.card-details ul {
+.refill-buspass-card-details ul {
     list-style-type: disc;
     padding-left: 20px;
     color: #555;
@@ -99,15 +98,15 @@
 }
 
 @media (max-width: 768px) {
-    .cards-container {
+    .refill-buspass-cards-container {
         flex-direction: column;
     }
 
-    .card {
+    .refill-buspass-card {
         max-width: 100%;
     }
 
-    .pricing-table th, .pricing-table td {
+    .refill-buspass-pricing-table th, .refill-buspass-pricing-table td {
         font-size: 0.9em;
     }
 }

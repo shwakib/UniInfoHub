@@ -1,5 +1,43 @@
+.bus-pass-hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Increase height to make image taller */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bus-pass-hero-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bus-pass-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+
+.bus-pass-hero-text {
+    position: absolute;
+    top: 35%; /* Adjusts the vertical position */
+    left: 13.5%; /* Adjusts the horizontal position */
+    transform: translate(-20%, -30%);
+    color: #000;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    padding: 20px 30px;
+    border-radius: 8px; /* Optional: adds rounded corners */
+    max-width: 60%; /* Restricts the width of the text block */
+}
+
 /* General styling for the deadlines, periods, and costs section */
-.deadlines-periods-costs-section {
+.bus-pass-deadlines-periods-costs-section {
     padding: 40px 20px;
     max-width: 900px;
     margin: 0 auto;
@@ -9,49 +47,49 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.deadlines-periods-costs-section h2 {
+.bus-pass-deadlines-periods-costs-section h2 {
     font-size: 2em;
     color: #1e3a78; /* Dark blue color */
     margin-bottom: 10px;
 }
 
-.header-line {
+.bus-pass-header-line {
     border: 1px solid #1e3a78;
     margin-bottom: 30px;
 }
 
-.on-this-page {
+.bus-pass-on-this-page {
     margin-bottom: 20px;
     padding-left: 20px;
 }
 
-.on-this-page h4 {
+.bus-pass-on-this-page h4 {
     font-weight: bold;
     font-size: 1.1em;
     color: #1e3a78;
     margin-bottom: 10px;
 }
 
-.on-this-page ul {
+.bus-pass-on-this-page ul {
     list-style: none;
     padding: 0;
 }
 
-.on-this-page li {
+.bus-pass-on-this-page li {
     margin-bottom: 8px;
 }
 
-.on-this-page a {
+.bus-pass-on-this-page a {
     text-decoration: none;
     color: #0073e6;
     transition: color 0.3s;
 }
 
-.on-this-page a:hover {
+.bus-pass-on-this-page a:hover {
     color: #005bb5;
 }
 
-.semester-section {
+.bus-pass-semester-section {
     margin-bottom: 30px;
     padding: 20px;
     background-color: #fff;
@@ -59,23 +97,23 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.semester-section h3 {
+.bus-pass-semester-section h3 {
     font-size: 1.5em;
     color: #1e3a78;
     margin-bottom: 10px;
 }
 
-.semester-section ul {
+.bus-pass-semester-section ul {
     list-style-type: none;
     padding: 0;
 }
 
-.semester-section li {
+.bus-pass-semester-section li {
     margin-bottom: 10px;
     color: #333;
     font-size: 1em;
 }
 
-.semester-section li strong {
+.bus-pass-semester-section li strong {
     color: #000;
 }
