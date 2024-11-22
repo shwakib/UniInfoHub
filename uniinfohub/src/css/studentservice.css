@@ -1,0 +1,108 @@
+.sin-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8f4f8;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.sin-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.sin-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sin-header h1 {
+    color: #2b6777;
+    font-size: 2.8em;
+    margin-bottom: 15px;
+}
+
+.sin-header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.sin-section {
+    margin-bottom: 35px;
+    border-bottom: 2px solid #bcd4e6;
+    padding-bottom: 15px;
+}
+
+.sin-section-title {
+    color: #2b6777;
+    margin-bottom: 10px;
+}
+
+.sin-list {
+    list-style-type: square;
+    margin-left: 25px;
+}
+
+.sin-list-nested {
+    list-style-type: circle;
+    margin-left: 30px;
+}
+
+.sin-address {
+    font-style: normal;
+    background: #eef5f9;
+    padding: 20px;
+    border-left: 5px solid #2b6777;
+    margin: 25px 0;
+}
+
+.sin-address strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.sin-text {
+    margin-bottom: 15px;
+}
+
+.sin-card {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #cfdfe6;
+    border-radius: 8px;
+    background: #f7fafc;
+}
+
+.sin-link {
+    color: #2b6777;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sin-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .sin-container {
+        padding: 15px;
+    }
+
+    .sin-header h1 {
+        font-size: 2.2em;
+    }
+
+    .sin-header p {
+        font-size: 1em;
+    }
+
+    .sin-section {
+        margin-bottom: 20px;
+    }
+}

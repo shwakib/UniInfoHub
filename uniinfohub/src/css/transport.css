@@ -1,93 +1,96 @@
 .transport-banner {
-    text-align: center;
-    position: relative;
-    width: 100%;
-    height: 90vh; /* Full viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 90vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.banner-image {
-    width: 100%;
-    height: auto;
+.transport-banner-image {
+  width: 100%;
+  height: auto;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .bus-info-section {
-    padding: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+.transport-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
-.bus-info-section h1{
+
+.transport-bus-info-section {
+  padding: 20px;
   max-width: 1000px;
   margin: 0 auto;
-  font-size: 2.5em;          
-  color: #453f3f;  
 }
 
-  .pickup-info-box, .bus-image {
-    width: 100%;
-    box-sizing: border-box; 
-  }
-.pickup-info-box {
-  background-color: #f8f8f8; 
-  border-radius: 12px;                  
-  margin: 20px auto;           
-  box-shadow: 0px 4px 8px rgba(0, 0.2, 0, 0.2); 
-  text-align: center;          
-  color: #4a4a4a;             
+.transport-bus-info-section h1 {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 2.5em;
+  color: #453f3f;
+}
+
+.transport-pickup-info-box,
+.transport-bus-image {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.transport-pickup-info-box {
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #4a4a4a;
   font-style: italic;
-  height: 37vh
+  height: 37vh;
 }
 
-.pickup-info-box h4 {
-    font-size: 1.5em;          
-    color: #333;                
-    margin-bottom: 5px; 
+.transport-pickup-info-box h4 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 5px;
 }
 
-  
-  .pickup-info-box p {                           
-    font-size: 1.2em;          
-    color: #060606;             
-    line-height: 1;          
-    font-weight: 400;    
-  }
-
-
-.pickup-info{
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    margin-bottom: 20px;
-
+.transport-pickup-info-box p {
+  font-size: 1.2em;
+  color: #060606;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
-.contact-info table {
-    width: 100%;
-    border-collapse: collapse;
+.transport-pickup-info {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.contact-info th, .contact-info td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
+.transport-contact-info table {
+  width: 100%;
+  border-collapse: collapse;
 }
+
+.transport-contact-info th,
+.transport-contact-info td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
 /* Styles for FAQ items with accordion functionality */
-.faq-item {
+.transport-faq-item {
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
   cursor: pointer;
 }
 
-.faq-item h4 {
+.transport-faq-item h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,89 +99,70 @@
   padding: 0;
 }
 
-.faq-answer {
+.transport-faq-answer {
   margin-top: 10px;
   padding-left: 15px;
 }
 
-.arrow {
+.transport-arrow {
   margin-left: 10px;
   transition: transform 0.3s;
 }
 
-.arrow.open {
+.transport-arrow.open {
   transform: rotate(180deg);
 }
 
-.important-note {
+.transport-important-note {
   background-color: #f4f4f4;
   border-left: 4px solid #f44336; /* Red border to highlight the note */
   padding: 10px;
   margin-top: 20px;
   font-weight: bold;
-  border-radius: 12px;                  
-  margin: 20px auto;           
-  box-shadow: 0px 4px 8px rgba(0, 0.2, 0, 0.2); 
+  border-radius: 12px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* General Contact Information Section Styles */
-.contact-info-section {
+.transport-contact-info-section {
   margin-top: 20px;
 }
 
-.contact-table {
+.transport-contact-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
 }
 
-.contact-table th,
-.contact-table td {
+.transport-contact-table th,
+.transport-contact-table td {
   border: 1px solid #ddd;
   padding: 10px;
   text-align: left;
 }
 
-.contact-table th {
+.transport-contact-table th {
   background-color: #f4f4f4;
 }
-.contact-info-section {
-  margin-top: 30px;
-}
 
-.contact-info {
+.transport-contact-info {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 
-.contact-column {
+.transport-contact-column {
   flex: 1;
 }
 
-.contact-column h4 {
+.transport-contact-column h4 {
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.contact-column p {
+.transport-contact-column p {
   margin: 5px 0;
-}
-
-/* Accordion-style for FAQ and contact sections */
-.faq-item, .contact-info-section h3 {
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
-  cursor: pointer;
-}
-
-.faq-item h4, .contact-info-section h3 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
 }
 
 /* General styling for the bus pass details section */
@@ -187,40 +171,49 @@ body {
   padding: 0;
 }
 
-.transit-transportation-section {
-  padding: 40px 0; /* Remove padding on the left and right */
-  max-width: 100%; /* Full width */
-  margin: 0; /* Remove auto margins */
-  text-align: center;
-  background-color: #f8f9fa; /* Optional, for better contrast */
-}
-
-.transit-transportation-section h2 {
-  font-size: 2em;
-  font-weight: bold;
-  margin-bottom: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/* Transit card container styles */
-/* General styling for the transit transportation section */
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.transit-transportation-section {
-  padding: 40px 20px; /* Added padding for top and bottom, minimal left/right padding */
-  width: 100%; /* Full width of the parent container */
+.transport-transit-section {
+  padding: 40px 20px;
+  width: 100%;
   margin: 0;
   text-align: center;
-  background-color: #f8f9fa; /* Optional, for contrast */
+  background-color: #f8f9fa;
 }
 
-.transit-transportation-section h2 {
+.transport-transit-section h2 {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
+.transport-transit-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.transport-transit-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  padding: 15px;
+}
+
+.transport-transit-card-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.transport-transit-card-content h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.transport-transit-card-content p {
+  font-size: 1em;
+  color: #666;
+}

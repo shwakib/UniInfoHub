@@ -35,7 +35,7 @@ const router = createBrowserRouter([
   { path: "/how-to-print", element: <HowAndWhereToPrint /> },
   { path: "/load-uwincard", element: <LoadUwinCard /> },
   { path: "/book-room", element: <BookRoom /> },
-  { path: "/getbusspass", element: <GetBusPass /> },
+  { path: "/getbuspass", element: <GetBusPass /> },
   { path: "/refillbuspass", element: <RefillBusPass /> },
   { path: "/checkstop", element: <CheckStop /> },
   { path: "/studentservices", element: <Studentservices /> },

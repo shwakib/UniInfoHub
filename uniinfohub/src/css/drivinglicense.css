@@ -1,0 +1,162 @@
+/* DrivingPage.css */
+
+.driving-page {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.driving-sidebar {
+  width: 25%;
+  background-color: #f5f5f5;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.driving-sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.driving-sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.driving-sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.driving-sidebar ul li a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.driving-sidebar ul li a:hover {
+  color: #0056b3;
+}
+
+.driving-content {
+  width: 75%;
+  padding: 20px;
+}
+
+.driving-content section {
+  margin-bottom: 40px;
+}
+
+.driving-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #00274d;
+}
+
+.driving-content h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #005bb5;
+}
+
+.driving-content h4 {
+  font-size: 1.25rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.driving-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.driving-content ul li {
+  margin-bottom: 10px;
+}
+
+.driving-content p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.driving-level-two-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+}
+
+.driving-g1-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+}
+
+.driving-road-tests-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+}
+
+.driving-road-tests-container h2,
+.driving-level-two-container h2,
+.driving-g1-container h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #00274d;
+}
+
+.driving-road-tests-container h3,
+.driving-level-two-container h3,
+.driving-g1-container h3 {
+  font-size: 1.4em;
+  margin-top: 20px;
+  color: #005bb5;
+}
+
+.driving-road-tests-container p,
+.driving-level-two-container p,
+.driving-g1-container p {
+  margin: 10px 0;
+}
+
+.driving-road-tests-container ul,
+.driving-level-two-container ul,
+.driving-g1-container ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.driving-road-tests-container ul li,
+.driving-level-two-container ul li,
+.driving-g1-container ul li {
+  margin-bottom: 10px;
+}
+
+.driving-road-tests-container a,
+.driving-level-two-container a,
+.driving-g1-container a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.driving-road-tests-container a:hover,
+.driving-level-two-container a:hover,
+.driving-g1-container a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .driving-page {
+    flex-direction: column;
+  }
+
+  .driving-sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .driving-content {
+    width: 100%;
+  }
+}
