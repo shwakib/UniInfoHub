@@ -15,9 +15,9 @@ function BeforeGettingGSC() {
             <Navbar />
 
             {/* Banner Section */}
-            <section className="hero-section">
-                <div className="hero-image-container">
-                    <img src={actiactiimgbanner} alt="Students working together in a library" className="hero-image" />
+            <section className="banner-section">
+                <div className="banner-image-container">
+                    <img src={actiactiimgbanner} alt="Students working together in a library" className="banner-image" />
 
                 </div>
             </section>
@@ -36,7 +36,7 @@ function BeforeGettingGSC() {
                             Fridays we close for lunch from 12:00pm-1:00 pm.</p>
                         <p>Located on the second floor of the CAW Student Centre room 242</p>
 
-                        <img src={HealthServices} alt="Nurse taking a student's blood pressure" className="health-image" />
+                        <img id="BeforeGettingGscImg" src={HealthServices} alt="Nurse taking a student's blood pressure" className="health-image" />
 
                         <h3>Plan Activation</h3>
                         <p>

@@ -70,7 +70,7 @@ body {
 /* Full-width image within the main content container */
 .health-image {
     width: 100%;
-    height: auto;
+    height: 400px;
     margin: 20px 0;
 }
 
@@ -133,6 +133,7 @@ footer {
     color: #555;
     line-height: 1.5;
     margin: 10px 0;
+    text-align: justify; /* Justifies the text */
 }
 
 .clinic-text .appointment-link {
@@ -161,3 +162,34 @@ footer {
     object-fit: cover;
     border-radius: 8px;
 }
+
+
+.dropdown {
+    margin: 20px 0;
+}
+
+.dropdown-toggle {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.dropdown-toggle:hover {
+    background-color: #0056b3;
+}
+
+.dropdown-content {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    white-space: pre-wrap; /* Preserve formatting for detailed text */
+}
+
