@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Houserent from './components/pages/rent/Houserent';
+import Houserent from './components/pages/services/Houserent';
 import Transport from './components/pages/transport/Transport';
 import GSSProvider from '../src/components/pages/Health/GSSProvider';
 import GetGSC from '../src/components/pages/Health/GetGSC';
