@@ -43,6 +43,7 @@ function Navbar() {
             <li><a href="/drivinglicense">Getting Driving License, Abstract & G1</a></li>
             <li><a href="/accommodation">Accommodation in University’s Dormitory</a></li>
             <li><a href="/rent">Renting in Canada</a></li>
+            <li><a href="/load-uwindsor-card">Load UWindsor ID</a></li> 
           </ul>
         </li>
         <li>

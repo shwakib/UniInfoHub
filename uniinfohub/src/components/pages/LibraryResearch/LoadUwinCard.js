@@ -1,17 +1,52 @@
 import React, { useState } from 'react';
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
 import Navbar from '../../header/navbar';
 import Footer from '../../footer/footer';
 import uwincard from '../../../assets/image/uwincard.png';
 import '../../../css/gssprovider.css';
-// import '../../../css/landing.css';
-import HealthServices from '../../../assets/image/HealthServices.png';
-// Replace the path below with the actual path of the new clinic image
-import activationimg from '../../../assets/image/activationimg.png';
+import '../../../css/loaduwincardpayment.css';
 import getapp from '../../../assets/image/getapp.png';
-import HealthWellness from '../../../helper/Health&Wellness';
 import Libraryservices from '../../../helper/Libraryservices';
 
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
+
 function LoadUwinCard() {
+    const [loading, setLoading] = useState(false);
+
+    const handleProceedToPayment = async () => {
+        const email = document.getElementById('uwin-email').value;
+        const amount = document.getElementById('amount').value;
+
+        if (!email || !amount) {
+            alert('Please fill out both fields.');
+            return;
+        }
+
+        try {
+            setLoading(true); // Start loading
+            const response = await fetch('http://127.0.0.1:5000/api/create-checkout-session', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, amount: amount * 100 }),
+            });
+
+            const { id } = await response.json();
+            const stripe = await stripePromise;
+            const result = await stripe.redirectToCheckout({ sessionId: id });
+
+            if (result.error) {
+                console.error(result.error.message);
+                alert('Error redirecting to Stripe Checkout.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Failed to proceed to payment.');
+        } finally {
+            setLoading(false); // Stop loading
+        }
+    };
+
     const [openQuestion, setOpenQuestion] = useState(null);
 
     // Function to toggle a specific question
@@ -41,31 +76,31 @@ function LoadUwinCard() {
                     <div className="health-info">
                         <h3>How do I install the GET app?</h3>
                         <p>The GET Mobile app is available for iOS and Android devices. You can download it from your respective app store on the device <br />
-                        1. Download the GET Mobile app from Google Play (Android) or the App Store (Apple) <br />
-2. Tap on Install <br />
-3. Search and select the University of Windsor</p>
+                            1. Download the GET Mobile app from Google Play (Android) or the App Store (Apple) <br />
+                            2. Tap on Install <br />
+                            3. Search and select the University of Windsor</p>
                         <p>Users can select to use the desktop version of GET instead of downloading the app</p>
 
-                       
+
 
                         <h3>Holds</h3>
                         <p>
-                        In the event you have lost your UwinCARD and need to prevent it from being swiped, please contact the UwinCARD Office by phone, email or in-person or report it to any Food Services Manager as soon as possible. Our UwinCARD Office contact information and hours of operation are listed below.
+                            In the event you have lost your UwinCARD and need to prevent it from being swiped, please contact the UwinCARD Office by phone, email or in-person or report it to any Food Services Manager as soon as possible. Our UwinCARD Office contact information and hours of operation are listed below.
                         </p>
                         <h3>Hours of Operation:</h3>
                         <p>
-                        Monday to Friday 9:00am - 4:00pm (​closed for lunch from 12:00pm - 1:00pm)<br/>
-The office is closed on weekends and statutory holidays.
+                            Monday to Friday 9:00am - 4:00pm (​closed for lunch from 12:00pm - 1:00pm)<br />
+                            The office is closed on weekends and statutory holidays.
                         </p>
-                       
+
                     </div>
                 </section>
 
                 {/* Urgent Medical Concern Message Section */}
                 <section className="urgent-message">
                     <p>
-                        
-*Please note that GET now serves as the primary method for adding funds, replacing the previous process through UWinsite.
+
+                        *Please note that GET now serves as the primary method for adding funds, replacing the previous process through UWinsite.
                     </p>
                 </section>
 
@@ -162,21 +197,21 @@ The office is closed on weekends and statutory holidays.
                         <div className="clinic-text">
                             <h2>How to load money for printing</h2>
                             <p>
-                            Add funds to your UWinCARD in three ways. For more information please see the UWinCARD office webpage, or contact campus ITS for assistance with your UWin Account. 
+                                Add funds to your UWinCARD in three ways. For more information please see the UWinCARD office webpage, or contact campus ITS for assistance with your UWin Account.
                             </p>
                             <p>
-                            Online: Credit
-                            Download and login to the GET Mobile app to add funds online. The GET mobile app is a new and faster way to add funds to your card.
+                                Online: Credit
+                                Download and login to the GET Mobile app to add funds online. The GET mobile app is a new and faster way to add funds to your card.
                             </p>
                             <p>
-                            On-campus: Cash
-                            Add funds with cash and coins using the UWinCARD deposit machine on the first floor of the Student Centre, next to the main information desk.
+                                On-campus: Cash
+                                Add funds with cash and coins using the UWinCARD deposit machine on the first floor of the Student Centre, next to the main information desk.
                             </p>
                             <p>
-                            On-campus: Credit or debit
-                            Head to the UWinCARD office to add funds using a credit or debit card.
+                                On-campus: Credit or debit
+                                Head to the UWinCARD office to add funds using a credit or debit card.
                             </p>
-                        
+
                         </div>
                         <div className="clinic-image-container">
                             <img src={getapp} alt="Nurse wearing mask and safety goggles" className="clinic-image" />
@@ -189,13 +224,13 @@ The office is closed on weekends and statutory holidays.
                     <div className="health-info">
                         <h3>Photocopying and Scanning</h3>
                         <p>
-                        Flatbed scanners are available at many of the computers on the main floor. Open "Epson Scan" to get started.
+                            Flatbed scanners are available at many of the computers on the main floor. Open "Epson Scan" to get started.
 
-Ask your IT Desk consultant for help if you're stuck.<br/>
-Location: Main Building <br/>
-Main Floor - 1 monochrome copier and 1 colour copier<br/>
-Costs: <li>$0.10 cents per page for black and white</li>
-<li>$0.26 cents per page for colour</li>
+                            Ask your IT Desk consultant for help if you're stuck.<br />
+                            Location: Main Building <br />
+                            Main Floor - 1 monochrome copier and 1 colour copier<br />
+                            Costs: <li>$0.10 cents per page for black and white</li>
+                            <li>$0.26 cents per page for colour</li>
 
                         </p>
                     </div>
@@ -205,16 +240,73 @@ Costs: <li>$0.10 cents per page for black and white</li>
                 <section className="our-clinic">
                     <div className="clinic-content">
                         <div className="clinic-text">
-                            
+
                         </div>
                     </div>
                 </section>
-
-
             </div>
-
-
-
+            {/* Load UWinCard Payment Section */}
+            {/* <section className="payment-section">
+                <h2>Load UWinCard with Us</h2>
+                <p>Enter your UWin email and the amount you'd like to load, then proceed to payment.</p>
+                <form className="payment-form">
+                    <div className="input-group">
+                        <label htmlFor="uwin-email">UWin Email</label>
+                        <input
+                            type="email"
+                            id="uwin-email"
+                            placeholder="example@uwindsor.ca"
+                            required
+                        />
+                    </div>
+                    <div className="input-group">
+                        <label htmlFor="amount">Amount (in CAD)</label>
+                        <input
+                            type="number"
+                            id="amount"
+                            placeholder="Enter amount"
+                            min="1"
+                            required
+                        />
+                    </div>
+                    <button type="button" className="proceed-button" onClick={handleProceedToPayment}>
+                        Proceed to Payment
+                    </button>
+                </form>
+            </section> */}
+            <section className="payment-section">
+                <h2>Load UWinCard with Us</h2>
+                <p>Enter your UWin email and the amount you'd like to load, then proceed to payment.</p>
+                <form className="payment-form">
+                    <div className="input-group">
+                        <label htmlFor="uwin-email">UWin Email</label>
+                        <input
+                            type="email"
+                            id="uwin-email"
+                            placeholder="example@uwindsor.ca"
+                            required
+                        />
+                    </div>
+                    <div className="input-group">
+                        <label htmlFor="amount">Amount (in CAD)</label>
+                        <input
+                            type="number"
+                            id="amount"
+                            placeholder="Enter amount"
+                            min="1"
+                            required
+                        />
+                    </div>
+                    <button
+                        type="button"
+                        className="proceed-button"
+                        onClick={handleProceedToPayment}
+                        disabled={loading}
+                    >
+                        {loading ? 'Processing...' : 'Proceed to Payment'}
+                    </button>
+                </form>
+            </section>
             {/* Printing, Library & Research Section */}
             <Libraryservices />
 
