@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 from scrapers.important_dates import scrape_important_dates
 from scrapers.daily_news import scrape_dailynews
