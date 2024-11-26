@@ -4,6 +4,7 @@ import Footer from '../../footer/footer';
 //import bus_pass from '../../../assets/image/bus_pass.png'; 
 import TW_Smart_Ride from '../../../assets/image/TW_Smart_Ride.png';
 import TW_Smart_Pass from '../../../assets/image/TW_Smart_Pass.png';
+import Transit from '../../../helper/Transit.js';
 
 //import PrivateTransport from '../../../assets/image/PrivateTransport.png';
 import '../../../css/refillbuspass.css';
@@ -144,8 +145,19 @@ function OutsideUniBusPass() {
                         </tbody>
                     </table>
                 </div>
-            </section>
 
+
+
+
+                <div className="refill-buspass-smart-pass-section">
+                    <h2>UPASS</h2>
+                    <p>The UPASS is a universal smart pass for University of Windsor Students' Alliance (UWSA), Organization of Part-time University Students (OPUS) and Graduate Student Society (GSS) students. Inquiries regarding a lost, stolen or confiscated smart pass should be directed to the UWSA office.</p>
+                    <p>Do not bend or punch holes in your card, as it contains a microchip, and Transit Windsor will not refund a card that malfunctions due to these modifications.</p>
+                </div>
+
+                
+            </section>
+            <Transit />
             <Footer />
         </div>
     );

@@ -3,6 +3,7 @@ import Navbar from '../../header/navbar';
 import Footer from '../../footer/footer';
 import bus_pass from '../../../assets/image/bus_pass.png'; 
 import '../../../css/getbuspass.css';
+import Transit from '../../../helper/Transit.js';
 
 function StudentHub() {
     return (
@@ -12,14 +13,12 @@ function StudentHub() {
             <section className="bus-pass-hero-section">
                 <div className="bus-pass-hero-image-container">
                     <img src={bus_pass} alt="Bus Pass Service" className="bus-pass-hero-image" />
-                    <div className="bus-pass-hero-text">
-                        <h1>Get Bus Pass!</h1>
-                    </div>
+                    
                 </div>
             </section>
 
             <section className="bus-pass-deadlines-periods-costs-section">
-                <h2>DEADLINES, PERIODS AND COSTS</h2>
+                <h2>DEADLINES, PERIODS AND COSTS OF BUS-PASS</h2>
                 <hr className="bus-pass-header-line" />
 
                 {/* On This Page Links */}
@@ -62,7 +61,7 @@ function StudentHub() {
                     </ul>
                 </div>
             </section>
-
+            <Transit />
             <Footer />
         </div>
     );

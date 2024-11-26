@@ -23,11 +23,13 @@ def get_daily_news():
     data = scrape_dailynews()
     return jsonify(data)
 
-# Route for U-Pass deadlines, periods, and costs
 @app.route('/api/upass-deadlines', methods=['GET'])
 def get_upass_deadlines():
     data = scrape_upass_deadlines()
+    # if not data: 
+    #     return jsonify({"error": "Failed to fetch U-Pass deadlines"}), 500
     return jsonify(data)
 
 if __name__ == '__main__':
     app.run(debug=True)
+    
