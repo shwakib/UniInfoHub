@@ -12,16 +12,71 @@ const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
 
 function LoadUwinCard() {
     const [loading, setLoading] = useState(false);
+    const [errors, setErrors] = useState({ email: '', amount: '' });
 
+    // const handleProceedToPayment = async () => {
+    //     const email = document.getElementById('uwin-email').value;
+    //     const amount = document.getElementById('amount').value;
+
+    //     if (!email || !amount) {
+    //         alert('Please fill out both fields.');
+    //         return;
+    //     }
+
+    //     try {
+    //         setLoading(true); // Start loading
+    //         const response = await fetch('http://127.0.0.1:5000/api/create-checkout-session', {
+    //             method: 'POST',
+    //             headers: { 'Content-Type': 'application/json' },
+    //             body: JSON.stringify({ email, amount: amount * 100 }),
+    //         });
+
+    //         const { id } = await response.json();
+    //         const stripe = await stripePromise;
+    //         const result = await stripe.redirectToCheckout({ sessionId: id });
+
+    //         if (result.error) {
+    //             console.error(result.error.message);
+    //             alert('Error redirecting to Stripe Checkout.');
+    //         }
+    //     } catch (error) {
+    //         console.error('Error:', error);
+    //         alert('Failed to proceed to payment.');
+    //     } finally {
+    //         setLoading(false); // Stop loading
+    //     }
+    // };
     const handleProceedToPayment = async () => {
-        const email = document.getElementById('uwin-email').value;
-        const amount = document.getElementById('amount').value;
+        const email = document.getElementById('uwin-email').value.trim();
+        const amount = parseFloat(document.getElementById('amount').value.trim());
 
-        if (!email || !amount) {
-            alert('Please fill out both fields.');
-            return;
+        let isValid = true;
+        const newErrors = { email: '', amount: '' };
+
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            newErrors.email = 'Please enter a valid email address.';
+            isValid = false;
+        } else if (!email.endsWith('@uwindsor.ca')) {
+            newErrors.email = 'Email must end with @uwindsor.ca.';
+            isValid = false;
+        } else if (/^\d/.test(email.split('@')[0])) {
+            newErrors.email = 'Email should not start with a number.';
+            isValid = false;
         }
 
+        // Amount validation
+        if (isNaN(amount) || amount <= 0) {
+            newErrors.amount = 'Please enter a valid positive amount.';
+            isValid = false;
+        }
+
+        setErrors(newErrors);
+
+        if (!isValid) return;
+
+        // Proceed to payment
         try {
             setLoading(true); // Start loading
             const response = await fetch('http://127.0.0.1:5000/api/create-checkout-session', {
@@ -243,7 +298,7 @@ function LoadUwinCard() {
             <section className="payment-section">
                 <h2>Load UWinCard with Us</h2>
                 <p>Enter your UWin email and the amount you'd like to load, then proceed to payment.</p>
-                <form className="payment-form">
+                {/* <form className="payment-form">
                     <div className="input-group">
                         <label htmlFor="uwin-email">UWin Email</label>
                         <input
@@ -262,6 +317,38 @@ function LoadUwinCard() {
                             min="1"
                             required
                         />
+                    </div>
+                    <button
+                        type="button"
+                        className="proceed-button"
+                        onClick={handleProceedToPayment}
+                        disabled={loading}
+                    >
+                        {loading ? 'Processing...' : 'Proceed to Payment'}
+                    </button>
+                </form> */}
+                <form className="payment-form">
+                    <div className="input-group">
+                        <label htmlFor="uwin-email">UWin Email</label>
+                        <input
+                            type="email"
+                            id="uwin-email"
+                            placeholder="example@uwindsor.ca"
+                            required
+                            style={{ borderColor: errors.email ? 'red' : '#ddd' }}
+                        />
+                        {errors.email && <small style={{ color: 'red' }}>{errors.email}</small>}
+                    </div>
+                    <div className="input-group">
+                        <label htmlFor="amount">Amount (in CAD)</label>
+                        <input
+                            type="number"
+                            id="amount"
+                            placeholder="Enter amount"
+                            required
+                            style={{ borderColor: errors.amount ? 'red' : '#ddd' }}
+                        />
+                        {errors.amount && <small style={{ color: 'red' }}>{errors.amount}</small>}
                     </div>
                     <button
                         type="button"
