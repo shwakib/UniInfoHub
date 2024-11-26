@@ -182,6 +182,7 @@ import React, { useState } from "react";
 import Navbar from '../../header/navbar';
 import Footer from '../../footer/footer';
 import '../../../css/studentservice.css';
+import StudentHub from '../../../helper/StudentHub.js';
 
 const SINClinic = () => {
     const [showBuildingImage, setShowBuildingImage] = useState(false);
@@ -253,7 +254,7 @@ const SINClinic = () => {
                     <p className="sin-text">If your study permit does not have these conditions, schedule an appointment with an International Student Advisor to learn how to change your permit.</p>
                 </section>
             </div>
-
+            <StudentHub/>
             <Footer />
         </div>
     );

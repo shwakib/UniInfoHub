@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../../header/navbar';
 import Footer from '../../footer/footer';
 import '../../../css/drivinglicense.css';
+import StudentHub from '../../../helper/StudentHub.js';
 
 function DrivingPage() {
   return (
@@ -236,9 +237,19 @@ function DrivingPage() {
                 <li>Arrive at least 30 minutes before Road Test appointment</li>
               </ul>
             </div>
+            <div>
+            <h3>Understanding Driver’s Licence Classes and Their Requirements</h3>
+            <p>If you're looking to understand the types of vehicles you can drive with different licence classes, here’s a quick overview. <strong>Class A</strong> licences allow you to operate any tractor-trailer combination, while <strong>Class B</strong> licences are designated for school buses and also permit driving vehicles under several other classes. <strong>Class C</strong> licences cover regular buses, and <strong>Class D</strong> licences are required for heavy trucks exceeding 11,000 kg gross weight. For smaller school buses with a maximum capacity of 24 passengers, you’ll need a <strong>Class E</strong> licence, and for ambulances or buses with the same capacity, a <strong>Class F </strong>licence is required. Everyday cars, vans, and small trucks up to 11,000 kg fall under a <strong>Class G</strong> licence, which includes graduated learning stages with <strong>G1 and G2 levels</strong>. Motorcycles, including scooters, mopeds, and tricycles, are covered under <strong>Class M</strong>, with specific restrictions for limited-speed motorcycles and motor tricycles. Additionally, a "Z" air brake endorsement is required to operate vehicles equipped with air brakes.</p>
+            </div>
+          </section>
+          <section>
+            <div>
+              <p>For more information about any licences, either for motor bike, car or truck, go to <a href="https://www.ontario.ca/document/official-mto-drivers-handbook/getting-your-drivers-licence#level-one">Licence Information</a> </p>
+            </div>
           </section>
         </div>
       </div>
+      <StudentHub/>
       <Footer />
     </div>
   );

@@ -38,8 +38,8 @@
 //     const toggleQuestion = (index) => {
 //         setOpenQuestion(openQuestion === index ? null : index);
 //     };
-  
-    
+
+
 //     return (
 //         <div>
 //             <Navbar />
@@ -47,12 +47,12 @@
 //             {/* Banner Section */}
 //             <section className="transport-banner">
 //                 <img src={Bustransport} alt="Bus at Windsor" className="banner-image" />
-                
+
 //             </section>
 
 //             {/* Information Section */}
 //             <section className="bus-info-section">
-           
+
 //                 <div className="bus-info-content">
 //                     <div className ="bus-pass-hearder">
 //                         <h1>Bus Pass Update</h1>
@@ -88,16 +88,16 @@
 
 //                         <img src={Bustransport2} alt="Another bus image" className="bus-image" />
 //                     </div>
-                  
+
 //                     <section className="bus-pass-details-section">
 //             {/* Pick Up Your Pass Section */}
 //             <div className="pick-up-pass-section">
 //                 <h3>PICK UP YOUR PASS!</h3>
 //                       {/* <section className="transport-banner">
 //                         <img src={Bustransport} alt="Bus at Windsor" className="banner-image" />
-                
+
 //                     </section> */}
-                    
+
 
 //                 <div className="faq-item">
 //                     <h4 onClick={() => toggleQuestion(1)}>
@@ -226,7 +226,7 @@
 //                             >
 //                                  click here for more information
 //                             </a>.
-                        
+
 //             </div>
 
 //               {/* Contact Information Section */}
@@ -254,11 +254,11 @@
 //                     </div>
 //                 </div>
 //             </div>
-        
+
 //         </section>
 //                 </div>
-                
-                    
+
+
 //             </section>
 //                 {/* Transit & Transportation Section */}
 //                 <section className="transit-section">
@@ -325,7 +325,7 @@ function Transport() {
                     </div>
                     <div className="transport-driving-today-section">
                         <h3>Driving Today for a Better Tomorrow</h3>
-                        <p>Transit Windsor operates the public transit for the municipality of the City of Windsor. You can view the route maps and schedules for the service on the Transit Windsor website at 
+                        <p>Transit Windsor operates the public transit for the municipality of the City of Windsor. You can view the route maps and schedules for the service on the Transit Windsor website at
                             <a href="https://windsor.mytransitride.com/" target="_blank" rel="noopener noreferrer">
                                 https://windsor.mytransitride.com/
                             </a>.
@@ -439,11 +439,55 @@ function Transport() {
                                 )}
                             </div>
                         </div>
+                        {/* NEW CHANGES */}
+
+                        <div>
+                            *Note: Students can use their <strong>student id</strong> to ride on bus if they are yet to get the bus pass.
+                        </div>
+                        <div> If you want to have a bus pass outside uwindsor,  <a href="/refillbuspass " target="_blank" rel="noopener noreferrer" >click here for more information </a>
+
+                        </div>
+
+
+
+
+                        {/* Contact Information Section */}
+                        {/* <div className="contact-info-section">
+                            <div className="contact-info">
+                                <div className="contact-column">
+                                    <h4>Main Office</h4>
+                                    <p>Room 209,</p>
+                                    <p>2nd Floor</p>
+                                    <p>CAW Student Centre</p>
+                                    <p>401 Sunset Ave.</p>
+                                </div>
+                                <div className="contact-column">
+                                    <h4>Contact</h4>
+                                    <p>Windsor, ON, N8B 3P4</p>
+                                    <p>PHONE: (519) 971-3600</p>
+                                    <p>FAX: (519) 971-3654</p>
+                                    <p>EMAIL: <a href="mailto:uwsa@uwindsor.ca">uwsa@uwindsor.ca</a></p>
+                                </div>
+                                <div className="contact-column">
+                                    <h4>Hours of Operation</h4>
+                                    <p>Mon - Thurs: 9:30am - 4:30pm</p>
+                                    <p>Friday: 10am - 3:30pm</p>
+                                    <p>Sat & Sun: Closed</p>
+                                </div>
+                            </div>
+                        </div> */}
+
+
+
+
+
+                        {/* END OF NEW CHANGES */}
+
                     </section>
                 </div>
             </section>
-            
-            <Transit/>
+
+            <Transit />
 
             <Footer />
         </div>
