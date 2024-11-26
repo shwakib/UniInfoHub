@@ -13,6 +13,9 @@
 # production
 /build
 
+#stripepaymentinstruction
+/extras/stripetestnumbers.txt
+
 # misc
 .DS_Store
 .env.local

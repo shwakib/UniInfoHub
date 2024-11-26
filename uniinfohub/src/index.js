@@ -20,7 +20,6 @@ import Studentservices from '../src/components/pages/services/Studentservices';
 import CheckStop from './components/pages/transport/Checkstop';
 import Drivinglicense from '../src/components/pages/services/Drivinglicense'; 
 import Accommodation from '../src/components/pages/services/Accommodation';
-import LoadCard from './components/pages/services/LoadCard';
 import Success from './components/pages/Payment/Success';
 import Cancel from './components/pages/Payment/Cancel';
 
@@ -45,7 +44,6 @@ const router = createBrowserRouter([
   { path: "/accommodation", element: <Accommodation /> },
   { path: "/drivinglicense", element: <Drivinglicense /> },
   { path: "/search-journal", element: <SearchJournal /> },
-  { path: "/load-uwindsor-card", element: <LoadCard /> },
   { path: "/success", element: <Success /> },
   { path: "/cancel", element: <Cancel /> },
 ]);

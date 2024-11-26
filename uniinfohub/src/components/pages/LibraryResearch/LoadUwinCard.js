@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
-import { Elements } from '@stripe/react-stripe-js';
 import Navbar from '../../header/navbar';
 import Footer from '../../footer/footer';
 import uwincard from '../../../assets/image/uwincard.png';
@@ -56,7 +55,6 @@ function LoadUwinCard() {
     return (
         <>
             <Navbar />
-
             {/* Banner Section */}
             <section className="banner-section">
                 <div className="banner-image-container">
@@ -189,8 +187,6 @@ function LoadUwinCard() {
                         )}
                     </div>
                 </section>
-
-
                 {/* Emergancy Assistance Section */}
                 <section className="our-clinic">
                     <div className="clinic-content">
@@ -218,7 +214,6 @@ function LoadUwinCard() {
                         </div>
                     </div>
                 </section>
-
                 {/* Important Updates Section */}
                 <section className="health-services">
                     <div className="health-info">
@@ -240,40 +235,11 @@ function LoadUwinCard() {
                 <section className="our-clinic">
                     <div className="clinic-content">
                         <div className="clinic-text">
-
                         </div>
                     </div>
                 </section>
             </div>
             {/* Load UWinCard Payment Section */}
-            {/* <section className="payment-section">
-                <h2>Load UWinCard with Us</h2>
-                <p>Enter your UWin email and the amount you'd like to load, then proceed to payment.</p>
-                <form className="payment-form">
-                    <div className="input-group">
-                        <label htmlFor="uwin-email">UWin Email</label>
-                        <input
-                            type="email"
-                            id="uwin-email"
-                            placeholder="example@uwindsor.ca"
-                            required
-                        />
-                    </div>
-                    <div className="input-group">
-                        <label htmlFor="amount">Amount (in CAD)</label>
-                        <input
-                            type="number"
-                            id="amount"
-                            placeholder="Enter amount"
-                            min="1"
-                            required
-                        />
-                    </div>
-                    <button type="button" className="proceed-button" onClick={handleProceedToPayment}>
-                        Proceed to Payment
-                    </button>
-                </form>
-            </section> */}
             <section className="payment-section">
                 <h2>Load UWinCard with Us</h2>
                 <p>Enter your UWin email and the amount you'd like to load, then proceed to payment.</p>
@@ -309,8 +275,6 @@ function LoadUwinCard() {
             </section>
             {/* Printing, Library & Research Section */}
             <Libraryservices />
-
-
             <Footer />
         </>
     );
