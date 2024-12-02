@@ -1,5 +1,9 @@
 /* DrivingPage.css */
 
+.link_hand {
+  cursor:pointer;
+}
+
 .driving-page {
   display: flex;
   font-family: Arial, sans-serif;
@@ -145,6 +149,9 @@
 .driving-g1-container a:hover {
   text-decoration: underline;
 }
+
+
+
 
 @media (max-width: 768px) {
   .driving-page {

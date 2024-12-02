@@ -3,29 +3,45 @@ import Navbar from '../../header/navbar';
 import Footer from '../../footer/footer';
 import '../../../css/drivinglicense.css';
 import StudentHub from '../../../helper/StudentHub.js';
+import { useRef } from 'react';
 
 function DrivingPage() {
-  return (
-    <div>
-      <Navbar />
 
+  // const myRef = useRef<HTMLElement | null>(null);
+
+  const scrollAction = (elemenetId) => {
+    const headerOffset = 100;
+    const element = document.getElementById(elemenetId);
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+  }
+
+  return (
+    <>
+      <Navbar />
       <div className="driving-page">
         <div className="driving-sidebar">
           <h2>ON THIS PAGE</h2>
           <ul>
-            <li><a href="#requirements">Requirements for driving in Ontario</a></li>
-            <li><a href="#classification-chart">Driver’s Licence Classification Chart</a></li>
-            <li><a href="#kind-of-licence">What kind of licence?</a></li>
-            <li><a href="#graduated-licensing">Graduated licensing</a></li>
-            <li><a href="#applying-for-licence">Applying for a licence</a></li>
-            <li><a href="#licensing-requirements">Graduated licensing requirements</a></li>
+            <li><a className="link_hand" onClick={() => scrollAction("requirements")}>Requirements for driving in Ontario</a></li>
+            <li><a className="link_hand" onClick={() => scrollAction("classification-chart")}>Driver’s Licence Classification Chart</a></li>
+            <li><a className="link_hand" onClick={() => scrollAction("kind-of-licence")}>What kind of licence?</a></li>
+            <li><a className="link_hand" onClick={() => scrollAction("graduated-licensing")}>Graduated licensing</a></li>
+            <li><a className="link_hand" onClick={() => scrollAction("applying-for-licence")}>Applying for a licence</a></li>
+            <li><a className="link_hand" onClick={() => scrollAction("licensing-requirements")}>Graduated licensing requirements</a></li>
             <ul>
-              <li><a href="#level-one">Level One (Class G1)</a></li>
-              <li><a href="#g1-knowledge-test">G1 knowledge test – checklist</a></li>
-              <li><a href="#g1-exit-test">G1 exit test – checklist</a></li>
-              <li><a href="#level-two">Level Two (Class G2)</a></li>
-              <li><a href="#road-tests">Road tests</a></li>
-              <li><a href="#g2-exit-test">G2 exit test – checklist</a></li>
+              <li><a className="link_hand" onClick={() => scrollAction("level-one")}>Level One (Class G1)</a></li>
+              <li><a className="link_hand" onClick={() => scrollAction("g1-knowledge-test")}>G1 knowledge test – checklist</a></li>
+              <li><a className="link_hand" onClick={() => scrollAction("g1-exit-test")}>G1 exit test – checklist</a></li>
+              <li><a className="link_hand" onClick={() => scrollAction("level-two")}>Level Two (Class G2)</a></li>
+              <li><a className="link_hand" onClick={() => scrollAction("road-tests")}>Road tests</a></li>
+              <li><a className="link_hand" onClick={() => scrollAction("g2-exit-test")}>G2 exit test – checklist</a></li>
+              <li><a className="link_hand" onClick={() => scrollAction("understanding_drivers_licence_classes")}>Understanding Driver’s Licence Classes and Their Requirements</a></li>
             </ul>
           </ul>
         </div>
@@ -112,7 +128,7 @@ function DrivingPage() {
           <section id="licensing-requirements">
             <h2>Graduated licensing requirements</h2>
             <div className="driving-g1-container">
-              <h2>Level One (Class G1)</h2>
+              <h2 id="level-one">Level One (Class G1)</h2>
               <p>
                 Level One lasts 12 months. The Ministry of Transportation encourages all new drivers to take an approved
                 driver-education course to help learn the proper driving skills and knowledge. You should begin your training as
@@ -143,7 +159,7 @@ function DrivingPage() {
               <h3 id="g1-knowledge-test">G1 Knowledge Test – Checklist</h3>
               <p>
                 Before taking the G1 knowledge test, make sure you have studied the official{' '}
-                <a href="https://www.mto.gov.on.ca/">MTO Driver’s Handbook</a>.
+                <a href="https://canada.vn/wp-content/uploads/2020/09/Drivers-Handbook-Study-Guide-Ontario-Canada.pdf">MTO Driver’s Handbook</a>.
               </p>
               <p>Bring the following items to the test:</p>
               <ul>
@@ -225,7 +241,7 @@ function DrivingPage() {
                 No pets or passengers other than the driver examiner are allowed in the vehicle during a road test. Driving
                 instructors, friends, relatives and translators may not accompany you during the test.
               </p>
-              <h3>G2 exit test – checklist</h3>
+              <h3 id="g2-exit-test">G2 exit test – checklist</h3>
               <p>
                 You must have highway driving experience (experience driving on highways with speed limits of at least 80 km/h)
                 before taking the G2 exit test. Bring the following items to the test:
@@ -238,20 +254,27 @@ function DrivingPage() {
               </ul>
             </div>
             <div>
-            <h3>Understanding Driver’s Licence Classes and Their Requirements</h3>
+            <h3 id="understanding_drivers_licence_classes">Understanding Driver’s Licence Classes and Their Requirements</h3>
             <p>If you're looking to understand the types of vehicles you can drive with different licence classes, here’s a quick overview. <strong>Class A</strong> licences allow you to operate any tractor-trailer combination, while <strong>Class B</strong> licences are designated for school buses and also permit driving vehicles under several other classes. <strong>Class C</strong> licences cover regular buses, and <strong>Class D</strong> licences are required for heavy trucks exceeding 11,000 kg gross weight. For smaller school buses with a maximum capacity of 24 passengers, you’ll need a <strong>Class E</strong> licence, and for ambulances or buses with the same capacity, a <strong>Class F </strong>licence is required. Everyday cars, vans, and small trucks up to 11,000 kg fall under a <strong>Class G</strong> licence, which includes graduated learning stages with <strong>G1 and G2 levels</strong>. Motorcycles, including scooters, mopeds, and tricycles, are covered under <strong>Class M</strong>, with specific restrictions for limited-speed motorcycles and motor tricycles. Additionally, a "Z" air brake endorsement is required to operate vehicles equipped with air brakes.</p>
             </div>
           </section>
           <section>
             <div>
-              <p>For more information about any licences, either for motor bike, car or truck, go to <a href="https://www.ontario.ca/document/official-mto-drivers-handbook/getting-your-drivers-licence#level-one">Licence Information</a> </p>
+              <p>For more information about any licences, either for motor bike, car or truck, go to <a href="https://www.ontario.ca/document/official-mto-drivers-handbook/getting-your-drivers-licence">Licence Information</a> </p>
             </div>
           </section>
+          
+         
+       
+           
+
+
+
         </div>
       </div>
       <StudentHub/>
       <Footer />
-    </div>
+    </>
   );
 };
 
