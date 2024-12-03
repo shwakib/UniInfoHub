@@ -170,11 +170,11 @@ function ResidenceInfo() {
                     <div className="fees-container">
                         <h2>Fees - Winter 2025</h2>
                         <p>
-                            Meal Plans are mandatory for Residence Students. Please go to{' '}
-                            <a href="http://www.uwindsor.ca/food" target="_blank" rel="noopener noreferrer">
-                                http://www.uwindsor.ca/food
+                            Meal Plans are mandatory for Residence Students. Please go to for {' '}
+                            <a href="https://www.uwindsor.ca/foodservices/meal-plan-rates" target="_blank" rel="noopener noreferrer">
+                            Meal Plan rates.
                             </a>{' '}
-                            for Meal Plan rates.
+                            
                         </p>
                         <table className="fees-table">
                             <thead>
