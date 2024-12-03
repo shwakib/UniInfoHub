@@ -320,13 +320,13 @@ function Transport() {
                     </div>
                     <div className="transport-bus-pass-info">
                         <h3>Information</h3>
-                        <p>The UWSA, OPUS, and GSS negotiated a universal student bus pass (U-Pass) for UWSA, OPUS, and GSS students. To use U-Pass, students will need to tap their U-Pass cards on the readers upon boarding the bus.</p>
-                        <p>The U-Pass allows members to have unlimited rides on the regular Transit Windsor City service during the fall/winter 2024/2025 semesters.</p>
+                        <p>The UWSA, OPUS, and GSS collaborated to introduce a universal student bus pass (U-Pass) for their members. With the U-Pass, students can enjoy unlimited rides on Transit Windsor's regular city service throughout the Fall and Winter 2024/2025 semesters. To access this service, students simply need to tap their U-Pass cards on the bus readers when boarding..</p>
+                        {/* <p>The U-Pass allows members to have unlimited rides on the regular Transit Windsor City service during the fall/winter 2024/2025 semesters.</p> */}
                     </div>
                     <div className="transport-driving-today-section">
                         <h3>Driving Today for a Better Tomorrow</h3>
-                        <p>Transit Windsor operates the public transit for the municipality of the City of Windsor. You can view the route maps and schedules for the service on the Transit Windsor website at
-                            <a href="https://windsor.mytransitride.com/" target="_blank" rel="noopener noreferrer">
+                        <p>Transit Windsor operates the public transit for the municipality of the City of Windsor. You can view the route maps and schedules for the service on the Transit Windsor website at {" "}
+                             <a href="https://windsor.mytransitride.com/" target="_blank" rel="noopener noreferrer">
                                 https://windsor.mytransitride.com/
                             </a>.
                         </p>
@@ -404,6 +404,98 @@ function Transport() {
                                 </p>
                             </div>
                         </div>
+                        {/* Opt-In Information Section */}
+
+
+                        <div className="transport-opt-out-section">
+                            <h3>OPT-IN INFORMATION</h3>
+
+                            <div className="transport-faq-item">
+                                <h4 onClick={() => toggleQuestion(5)}>
+                                    Q. 1: How do I opt-in of the Fall bus pass?
+                                    <span className={`transport-arrow ${openQuestion === 5 ? 'open' : ''}`}>▼</span>
+                                </h4>
+                                {openQuestion === 5 && (
+                                    <div className="transport-faq-answer">
+                                        {/* new */}
+                                        <div>
+                                            <h2>U-Pass Information</h2>
+                                            <ul>
+                                                <li>
+                                                    <strong>Eligibility:</strong> Graduate students registered in Fall 2024 who haven’t been charged the U-Pass fee ($301: $296 for U-Pass + $5 admin) on their student statement.
+                                                </li>
+                                                <li>
+                                                    <strong>Validity:</strong> Fall 2024 and Winter 2025.
+                                                </li>
+                                                <li>
+                                                    <strong>Opt-In:</strong> Must be done online.
+                                                </li>
+                                                <li>
+                                                    <strong>Card Pick-Up:</strong> Students only; bring your student card or government-issued photo ID. Cards cannot be picked up by others.
+                                                </li>
+                                                <li>
+                                                    <strong>Note:</strong> If charged for U-Pass on your statement, no opt-in is required. Visit the{" "}
+                                                    <a
+                                                        href="https://www.uwindsor.ca/uwincard/"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+
+                                                    >
+                                                        UwinCard Office
+                                                    </a>{" "}
+                                                    for details on applying for or picking up your student card.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        {/* new */}
+                                    </div>
+                                )}
+                            </div>
+
+                            <div className="transport-faq-item">
+                                <h4 onClick={() => toggleQuestion(6)}>
+                                    Q. 2: Opt-in Criteria
+                                    <span className={`transport-arrow ${openQuestion === 6 ? 'open' : ''}`}>▼</span>
+                                </h4>
+                                {openQuestion === 6 && (
+                                    <div className="transport-faq-answer">
+                                        {/* new criteria */}
+                                        <div>
+                                            <h2>Steps to Opt-In for Fall U-Pass</h2>
+                                            <ol>
+                                                <li>
+                                                    Fill out the U-Pass opt-in form from <a
+                                                        href="https://uwindsorgss.ca/programs/upass/opt-in-application/"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+
+                                                    >
+                                                        UwinCard Office
+                                                    </a>.
+                                                </li>
+                                                <li>
+                                                    Receive an email confirming that your form has been received.
+                                                </li>
+                                                <li>
+                                                    You will then receive an email with a link to make the payment.
+                                                    <br />
+                                                    <strong>Note:</strong> Payment must be done online using either a debit or credit card. No in-person payments are allowed.
+                                                </li>
+                                                <li>
+                                                    After payment, you will receive an email with details on when to pick up your U-Pass.
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        {/* new criteria */}
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+
+
+
+
+
 
                         {/* Opt-Out Information Section */}
                         <div className="transport-opt-out-section">
@@ -452,30 +544,34 @@ function Transport() {
 
 
                         {/* Contact Information Section */}
-                        {/* <div className="contact-info-section">
-                            <div className="contact-info">
-                                <div className="contact-column">
+
+
+                        <div className="transport-contact-info-section">
+                            <div className="transport-contact-info">
+                                <div className="transport-contact-column">
                                     <h4>Main Office</h4>
                                     <p>Room 209,</p>
                                     <p>2nd Floor</p>
                                     <p>CAW Student Centre</p>
                                     <p>401 Sunset Ave.</p>
                                 </div>
-                                <div className="contact-column">
+                                <div className="transport-contact-column">
                                     <h4>Contact</h4>
                                     <p>Windsor, ON, N8B 3P4</p>
                                     <p>PHONE: (519) 971-3600</p>
                                     <p>FAX: (519) 971-3654</p>
-                                    <p>EMAIL: <a href="mailto:uwsa@uwindsor.ca">uwsa@uwindsor.ca</a></p>
+                                    <p>
+                                        EMAIL: <a href="mailto:uwsa@uwindsor.ca">uwsa@uwindsor.ca</a>
+                                    </p>
                                 </div>
-                                <div className="contact-column">
+                                <div className="transport-contact-column">
                                     <h4>Hours of Operation</h4>
                                     <p>Mon - Thurs: 9:30am - 4:30pm</p>
                                     <p>Friday: 10am - 3:30pm</p>
                                     <p>Sat & Sun: Closed</p>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
 
 
 
