@@ -87,6 +87,31 @@ function Landing() {
                     </div>
                 </div>
             </section>
+            {/* Latest News & Events Section
+            <section className="news-section">
+                <div className="news-section-header">
+                    <h2>Latest News & Events</h2>
+                    <span className="separator">|</span>
+                    <a href="https://www.uwindsor.ca/dailynews/" className="all-news-link">All News</a>
+                </div>
+                <div className="news-cards-container">
+                    {latestNews.length > 0 ? (
+                        latestNews.slice(0, 3).map((news, index) => (
+                            <div key={index} className="news-card">
+                                <img src={news.image} alt={news.title} className="news-card-image" />
+                                <div className="news-card-content">
+                                    <h3 className="news-card-title">
+                                        <a href={news.link} target="_blank" rel="noopener noreferrer">{news.title}</a>
+                                    </h3>
+                                    <p className="news-card-date">{news.date}</p>
+                                </div>
+                            </div>
+                        ))
+                    ) : (
+                        <p>Loading latest news...</p>
+                    )}
+                </div>
+            </section> */}
             {/* Map Section */}
             <section className="map-section">
                 <h2>Maps of UWindsor</h2>

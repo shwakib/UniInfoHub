@@ -22,6 +22,8 @@ import Drivinglicense from '../src/components/pages/services/Drivinglicense';
 import Accommodation from '../src/components/pages/services/Accommodation';
 import Success from './components/pages/Payment/Success';
 import Cancel from './components/pages/Payment/Cancel';
+import BookAppointment from './components/pages/Health/BookAppointment';
+import AdminDashboard from './helper/DashboardAppointments';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +48,9 @@ const router = createBrowserRouter([
   { path: "/search-journal", element: <SearchJournal /> },
   { path: "/success", element: <Success /> },
   { path: "/cancel", element: <Cancel /> },
+  { path: "/cancel", element: <Cancel /> },
+  { path: "/book-appointment", element: <BookAppointment /> },
+  { path: "/admin-dashboard", element: <AdminDashboard /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

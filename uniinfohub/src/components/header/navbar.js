@@ -16,6 +16,7 @@ function Navbar() {
             <li><a href="/get-gsc-card">How to get GSC Card</a></li>
             <li><a href="/before-getting-gsc">Before getting GSC Card</a></li>
             <li><a href="/opt-out-health">Opt out from Health Insurance</a></li>
+            <li><a href="/book-appointment">Book Appointment</a></li>
           </ul>
         </li>
         <li>
