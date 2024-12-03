@@ -264,7 +264,42 @@ function DrivingPage() {
             </div>
           </section>
           
-         
+         {/* NEW THING */}
+
+
+         <section id="students-driving-license">
+            <h2>Driving Licence Process for Students in Canada</h2>
+            <div className="student-license-process">
+              <h3>1. No Prior Driving Licence</h3>
+              <p>If students have never held a driver’s licence, they can choose between two options:</p>
+              <div className="driving-option">
+                <h4>Option 1:</h4>
+                <ul>
+                  <li>Pass the G1 exam, wait 1 year, and then take the G2 road test.</li>
+                  <li>After holding a G2 licence for 1 year, they can take the G road test.</li>
+                </ul>
+              </div>
+              <div className="driving-option">
+                <h4>Option 2 (Accelerated Path):</h4>
+                <ul>
+                  <li>Pass the G1 exam, attend a Ministry-approved driving school, and complete the program to receive a certificate.</li>
+                  <li>Reduces the wait time to 8 months for the G2 road test.</li>
+                  <li>After holding the G2 license for 1 year, they can take the G road test.</li>
+                </ul>
+              </div>
+              <h3>2. Driving Licence with 2+ Years of Experience in Home Country</h3>
+              <ul>
+                <li>Students with a driver’s licence and at least 2 years of experience in their home country only need to pass the G1 exam.</li>
+                <li>They can then skip the G2 test and proceed directly to the G road test.</li>
+              </ul>
+              <h3>3. Driving Licence with 1+ Years of Experience in Home Country</h3>
+              <ul>
+                <li>Students with a driver’s licence and 1+ years of experience in their home country must pass the G1 exam.</li>
+                <li>They do not have to wait to take the G2 road test.</li>
+                <li>After holding the G2 licence for 1 year, they can take the G road test.</li>
+              </ul>
+            </div>
+          </section>
        
            
 

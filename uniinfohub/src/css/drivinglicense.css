@@ -149,7 +149,13 @@
 .driving-g1-container a:hover {
   text-decoration: underline;
 }
-
+.driving-option {
+  background-color: #eef6ff;
+  padding: 15px;
+  border: 1px solid #cce4ff;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
 
 
 
