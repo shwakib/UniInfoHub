@@ -8,6 +8,7 @@ import Transit from '../../../helper/Transit';
 import Libraryservices from '../../../helper/Libraryservices';
 import StudentHub from '../../../helper/StudentHub';
 import Footer from '../../footer/footer';
+import Slider from "react-slick";
 
 function Landing() {
     const [importantDates, setImportantDates] = useState([]);
@@ -120,7 +121,7 @@ function Landing() {
                 </div>
             </section>
             {/* Latest News & Events Section */}
-            <section className="news-section">
+            {/* <section className="news-section">
                 <div className="news-section-header">
                     <h2>Latest News & Events</h2>
                     <span className="separator">|</span>
@@ -143,6 +144,58 @@ function Landing() {
                         <p>Loading latest news...</p>
                     )}
                 </div>
+            </section> */}
+            <section className="news-section">
+                <div className="news-section-header">
+                    <h2>Latest News & Events</h2>
+                    <span className="separator">|</span>
+                    <a href="https://www.uwindsor.ca/dailynews/" className="all-news-link">All News</a>
+                </div>
+                {latestNews.length > 0 ? (
+                    <Slider
+                        dots={true} // Adds dots for navigation
+                        infinite={true} // Enable infinite looping
+                        speed={500} // Transition speed
+                        slidesToShow={3} // Default: Show 4 slides on very large screens
+                        slidesToScroll={1} // Scroll 1 slide at a time
+                        autoplay={true} // Enable autoplay
+                        autoplaySpeed={3000} // Autoplay every 3 seconds
+                        responsive={[
+                            {
+                                breakpoint: 1921, // For screens larger than your laptop (e.g., external monitors)
+                                settings: {
+                                    slidesToShow: 4, // Show 4 cards
+                                },
+                            },
+                            {
+                                breakpoint: 1920, // For laptop screens (1920x1080)
+                                settings: {
+                                    slidesToShow: 3, // Show 3 cards
+                                },
+                            },
+                            {
+                                breakpoint: 768, // For smaller devices like tablets
+                                settings: {
+                                    slidesToShow: 1, // Show 1 card
+                                },
+                            },
+                        ]}
+                    >
+                        {latestNews.map((news, index) => (
+                            <div key={index} className="news-card">
+                                <img src={news.image} alt={news.title} className="news-card-image" />
+                                <div className="news-card-content">
+                                    <h3 className="news-card-title">
+                                        <a href={news.link} target="_blank" rel="noopener noreferrer">{news.title}</a>
+                                    </h3>
+                                    <p className="news-card-date">{news.date}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </Slider>
+                ) : (
+                    <p>Loading latest news...</p>
+                )}
             </section>
             {/* Health & Wellness Section */}
             <HealthWellness />

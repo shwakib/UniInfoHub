@@ -10,7 +10,7 @@ function Footer() {
                     <p>UniInfoHub is a centralized platform designed to simplify university life for students by providing easy access to essential resources, services, and information in one place. From health services to transit details and academic schedules, UniInfoHub is here to streamline and enhance the student experience.</p>
                 </div>
                 <div className="footer-links">
-                    <h3>Quick Links</h3>
+                    <h3>Academic Links</h3>
                     <ul>
                         <li><a href="https://www.uwindsor.ca/registrar/uwinsite-student">Uwinsite</a></li>
                         <li><a href="https://brightspace.uwindsor.ca/d2l/login">Brightspace</a></li>
@@ -20,7 +20,7 @@ function Footer() {
                     </ul>
                 </div>
                 <div className="footer-links">
-                    <h3>Quick Links</h3>
+                    <h3>Campus Resources</h3>
                     <ul>
                         <li><a href="https://www.uwindsor.ca/foodservices/">Food Services</a></li>
                         <li><a href="https://www.uwindsor.ca/residence/">Residence</a></li>
@@ -30,7 +30,7 @@ function Footer() {
                     </ul>
                 </div>
                 <div className="footer-links">
-                    <h3>Quick Links</h3>
+                    <h3>Graduate Studies</h3>
                     <ul>
                         <li><a href="https://www.uwindsor.ca/science/computerscience/">School Of Computer Science</a></li>
                         <li><a href="https://www.uwindsor.ca/science/computerscience/event-calendar/month">CS Events</a></li>

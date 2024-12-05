@@ -1,7 +1,8 @@
+/* General Navbar Styles */
 .navbar {
-  position: sticky; /* Makes the navbar stick to the top */
-  top: 0; /* Sticks the navbar at the top of the viewport */
-  z-index: 1000; /* Ensures the navbar stays above other elements */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,6 +11,7 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo Section */
 .navbar-logo {
   margin-left: 52px;
 }
@@ -20,6 +22,7 @@
   height: 40px;
 }
 
+/* Standard Navbar Links */
 .navbar-links {
   list-style: none;
   display: flex;
@@ -66,8 +69,9 @@
   color: #0055a5;
 }
 
+/* Dropdown Menu */
 .dropdown {
-  display: none; 
+  display: none;
   position: absolute;
   top: 50%;
   left: 0;
@@ -105,21 +109,109 @@
 
 .dropdown a:hover {
   color: #0055a5;
-  background-color: #f0f0f0; 
+  background-color: #f0f0f0;
 }
 
 .dropdown a::after {
-  content: none; 
+  content: none;
 }
 
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none; /* Hidden by default for larger screens */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.hamburger-menu div {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  /* transition: all 0.1s ease; */
+}
+
+.hamburger-menu.menu-open div {
+  background-color: transparent; /* Make bars transparent when menu is open */
+}
+
+/* Blue Overlay for Hamburger Menu */
+.hamburger-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: -100%; /* Start off-screen */
+  width: 100%;
+  height: 100%;
+  background-color: #003366; /* Blue background */
+  z-index: 999; /* Ensure it covers everything */
+  transition: right 0.5s ease-in-out; /* Smooth slide-in effect */
+  padding: 0; /* Remove padding to avoid lines */
+  margin: 0; /* Remove margin to avoid lines */
+  border: none; /* Remove border to avoid lines */
+}
+
+.hamburger-overlay.active {
+  right: 0; /* Slide in from right */
+  overflow: hidden; /* Prevent extra content scrolling */
+}
+
+/* Navbar Links Inside Blue Overlay */
+.hamburger-overlay .navbar-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Spacing between items */
+  height: 100%; /* Center items vertically */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hamburger-overlay .navbar-links a {
+  font-family: 'Arial', sans-serif;
+  color: #ffffff; /* White text on blue background */
+  font-size: 1.5rem; /* Larger font size */
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  opacity: 1; /* Always visible */
+  transform: translateY(0); /* Positioned correctly */
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-overlay .navbar-links a:hover {
+  color: #f0f0f0; /* Lighter hover effect */
+}
+
+/* Close Button for Hamburger Menu */
+.close-icon {
+  position: absolute;
+  top: 20px; /* Adjusted to place it at the top */
+  right: -200px; /* Adjusted to place it in the top-right corner */
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 9999; /* Ensures it stays above everything else */
+  /* border: none; */
+}
+
+/* Responsive Design for Small Screens */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+  .hamburger-menu {
+    display: flex; /* Show hamburger menu */
   }
 
-  .navbar-links {
-    flex-direction: column;
-    gap: 10px;
+  .standard-links {
+    display: none; /* Hide standard links */
+  }
+
+  .hamburger-overlay {
+    display: block; /* Enable the blue overlay */
   }
 }

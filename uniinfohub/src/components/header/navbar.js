@@ -1,15 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../assets/image/Uniinfohub_logo.png';
 import '../../css/navbar.css';
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen); // Toggle the menu open/close state
+  };
+
   return (
     <nav className="navbar">
+      {/* Logo Section */}
       <div className="navbar-logo">
-        <a href='/'><img src={logo} alt="Uni Info Hub Logo" /></a>
+        <a href="/">
+          <img src={logo} alt="Uni Info Hub Logo" />
+        </a>
       </div>
-      <ul className="navbar-links">
-      <li>
+      <div
+        className={`hamburger-menu ${menuOpen ? 'menu-open' : ''}`}
+        onClick={toggleMenu}
+      >
+        {menuOpen ? (
+          <div className="close-icon">X</div> // Close icon when menu is open
+        ) : (
+          <>
+            <div></div>
+            <div></div>
+            <div></div>
+          </>
+        )}
+      </div>
+
+      {/* Blue Overlay with Navbar Links */}
+      <div className={`hamburger-overlay ${menuOpen ? 'active' : ''}`}>
+        <ul className="navbar-links">
+          <li><a href="#health" onClick={toggleMenu}>HEALTH</a></li>
+          <li><a href="#transportation" onClick={toggleMenu}>TRANSPORTATION</a></li>
+          <li><a href="#library" onClick={toggleMenu}>LIBRARY & RESEARCH</a></li>
+          <li><a href="#student-services" onClick={toggleMenu}>STUDENT SERVICES</a></li>
+          <li><a href="#about" onClick={toggleMenu}>ABOUT</a></li>
+        </ul>
+      </div>
+
+      {/* Navbar Links (For Larger Screens) */}
+      <ul className="navbar-links standard-links">
+        <li>
           <a href="#health">HEALTH</a>
           <ul className="dropdown">
             <li><a href="/gss-provider">GSS & Provider - Green Shield Canada</a></li>
@@ -43,7 +79,7 @@ function Navbar() {
             <li><a href="/studentservices">SIN Clinic & Service Canada</a></li>
             <li><a href="/drivinglicense">Getting Driving License, Abstract & G1</a></li>
             <li><a href="/accommodation">Accommodation in University’s Dormitory</a></li>
-            <li><a href="/rent">Renting in Canada</a></li> 
+            <li><a href="/rent">Renting in Canada</a></li>
           </ul>
         </li>
         <li>
